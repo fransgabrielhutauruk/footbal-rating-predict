@@ -1,0 +1,1308 @@
+2025-07-14 16:43:52,898 - ERROR - Please ensure all model files are in the same directory as this script
+2025-07-14 16:46:16,913 - INFO - 🚀 Starting Football Rating Prediction API...
+2025-07-14 16:46:16,914 - WARNING - ⚠️ Missing model files: ['random_forest_overall_model.pkl', 'random_forest_potential_model.pkl', 'feature_scaler.pkl', 'model_components.pkl']
+2025-07-14 16:46:16,916 - INFO - Creating dummy models for testing purposes...
+2025-07-14 16:46:19,227 - INFO - 🤖 Dummy models created for testing purposes
+2025-07-14 16:46:19,227 - INFO - ✅ API initialized successfully
+2025-07-14 16:46:19,228 - INFO - 🌐 Starting Flask server on http://localhost:5000
+2025-07-14 16:46:19,258 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.5:5000
+2025-07-14 16:46:19,259 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-14 16:46:26,924 - INFO - 127.0.0.1 - - [14/Jul/2025 16:46:26] "GET / HTTP/1.1" 200 -
+2025-07-14 16:46:27,204 - INFO - 127.0.0.1 - - [14/Jul/2025 16:46:27] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-07-14 16:46:39,064 - INFO - 127.0.0.1 - - [14/Jul/2025 16:46:39] "GET /health HTTP/1.1" 200 -
+2025-07-14 16:49:03,463 - INFO - 127.0.0.1 - - [14/Jul/2025 16:49:03] "GET /health HTTP/1.1" 200 -
+2025-07-14 16:49:03,718 - INFO - 127.0.0.1 - - [14/Jul/2025 16:49:03] "GET /health HTTP/1.1" 200 -
+2025-07-14 16:49:11,911 - INFO - 127.0.0.1 - - [14/Jul/2025 16:49:11] "OPTIONS /predict HTTP/1.1" 200 -
+2025-07-14 16:49:12,253 - INFO - Successful prediction: {'overall_rating': 75.7, 'potential_rating': 68.8}
+2025-07-14 16:49:12,253 - INFO - 127.0.0.1 - - [14/Jul/2025 16:49:12] "POST /predict HTTP/1.1" 200 -
+2025-07-14 16:49:22,726 - INFO - 127.0.0.1 - - [14/Jul/2025 16:49:22] "OPTIONS /predict HTTP/1.1" 200 -
+2025-07-14 16:49:23,053 - INFO - Successful prediction: {'overall_rating': 75.7, 'potential_rating': 68.8}
+2025-07-14 16:49:23,054 - INFO - 127.0.0.1 - - [14/Jul/2025 16:49:23] "POST /predict HTTP/1.1" 200 -
+2025-07-14 16:49:28,458 - INFO - 127.0.0.1 - - [14/Jul/2025 16:49:28] "OPTIONS /predict HTTP/1.1" 200 -
+2025-07-14 16:49:28,784 - INFO - Successful prediction: {'overall_rating': 75.7, 'potential_rating': 68.8}
+2025-07-14 16:49:28,785 - INFO - 127.0.0.1 - - [14/Jul/2025 16:49:28] "POST /predict HTTP/1.1" 200 -
+2025-07-14 16:49:30,082 - INFO - Successful prediction: {'overall_rating': 75.7, 'potential_rating': 68.8}
+2025-07-14 16:49:30,083 - INFO - 127.0.0.1 - - [14/Jul/2025 16:49:30] "POST /predict HTTP/1.1" 200 -
+2025-07-14 16:49:31,585 - INFO - Successful prediction: {'overall_rating': 75.7, 'potential_rating': 68.8}
+2025-07-14 16:49:31,586 - INFO - 127.0.0.1 - - [14/Jul/2025 16:49:31] "POST /predict HTTP/1.1" 200 -
+2025-07-14 16:49:32,570 - INFO - Successful prediction: {'overall_rating': 75.7, 'potential_rating': 68.8}
+2025-07-14 16:49:32,571 - INFO - 127.0.0.1 - - [14/Jul/2025 16:49:32] "POST /predict HTTP/1.1" 200 -
+2025-07-14 16:49:33,536 - INFO - Successful prediction: {'overall_rating': 75.7, 'potential_rating': 68.8}
+2025-07-14 16:49:33,537 - INFO - 127.0.0.1 - - [14/Jul/2025 16:49:33] "POST /predict HTTP/1.1" 200 -
+2025-07-14 16:49:39,973 - INFO - 127.0.0.1 - - [14/Jul/2025 16:49:39] "OPTIONS /predict HTTP/1.1" 200 -
+2025-07-14 16:49:40,296 - INFO - Successful prediction: {'overall_rating': 75.7, 'potential_rating': 68.8}
+2025-07-14 16:49:40,297 - INFO - 127.0.0.1 - - [14/Jul/2025 16:49:40] "POST /predict HTTP/1.1" 200 -
+2025-07-14 16:49:45,371 - INFO - 127.0.0.1 - - [14/Jul/2025 16:49:45] "OPTIONS /predict HTTP/1.1" 200 -
+2025-07-14 16:49:45,695 - INFO - Successful prediction: {'overall_rating': 75.7, 'potential_rating': 68.8}
+2025-07-14 16:49:45,696 - INFO - 127.0.0.1 - - [14/Jul/2025 16:49:45] "POST /predict HTTP/1.1" 200 -
+2025-07-14 16:49:46,421 - INFO - Successful prediction: {'overall_rating': 75.7, 'potential_rating': 68.8}
+2025-07-14 16:49:46,422 - INFO - 127.0.0.1 - - [14/Jul/2025 16:49:46] "POST /predict HTTP/1.1" 200 -
+2025-07-14 16:49:51,194 - INFO - 127.0.0.1 - - [14/Jul/2025 16:49:51] "GET /health HTTP/1.1" 200 -
+2025-07-14 16:49:51,459 - INFO - 127.0.0.1 - - [14/Jul/2025 16:49:51] "GET /health HTTP/1.1" 200 -
+2025-07-14 16:50:53,409 - INFO - 127.0.0.1 - - [14/Jul/2025 16:50:53] "GET /health HTTP/1.1" 200 -
+2025-07-14 16:50:53,663 - INFO - 127.0.0.1 - - [14/Jul/2025 16:50:53] "GET /health HTTP/1.1" 200 -
+2025-07-14 16:50:55,783 - INFO - 127.0.0.1 - - [14/Jul/2025 16:50:55] "OPTIONS /predict HTTP/1.1" 200 -
+2025-07-14 16:50:56,102 - INFO - Successful prediction: {'overall_rating': 75.7, 'potential_rating': 68.8}
+2025-07-14 16:50:56,103 - INFO - 127.0.0.1 - - [14/Jul/2025 16:50:56] "POST /predict HTTP/1.1" 200 -
+2025-07-14 16:50:57,479 - INFO - Successful prediction: {'overall_rating': 75.7, 'potential_rating': 68.8}
+2025-07-14 16:50:57,479 - INFO - 127.0.0.1 - - [14/Jul/2025 16:50:57] "POST /predict HTTP/1.1" 200 -
+2025-07-14 16:50:58,456 - INFO - Successful prediction: {'overall_rating': 75.7, 'potential_rating': 68.8}
+2025-07-14 16:50:58,457 - INFO - 127.0.0.1 - - [14/Jul/2025 16:50:58] "POST /predict HTTP/1.1" 200 -
+2025-07-14 16:50:59,484 - INFO - Successful prediction: {'overall_rating': 75.7, 'potential_rating': 68.8}
+2025-07-14 16:50:59,485 - INFO - 127.0.0.1 - - [14/Jul/2025 16:50:59] "POST /predict HTTP/1.1" 200 -
+2025-07-14 16:54:16,859 - INFO - 127.0.0.1 - - [14/Jul/2025 16:54:16] "OPTIONS /predict HTTP/1.1" 200 -
+2025-07-14 16:54:17,131 - INFO - Successful prediction: {'overall_rating': 75.7, 'potential_rating': 68.8}
+2025-07-14 16:54:17,132 - INFO - 127.0.0.1 - - [14/Jul/2025 16:54:17] "POST /predict HTTP/1.1" 200 -
+2025-07-14 16:55:16,167 - INFO - 127.0.0.1 - - [14/Jul/2025 16:55:16] "GET /features HTTP/1.1" 200 -
+2025-07-14 16:57:39,055 - INFO - 127.0.0.1 - - [14/Jul/2025 16:57:39] "GET /health HTTP/1.1" 200 -
+2025-07-14 16:57:39,301 - INFO - 127.0.0.1 - - [14/Jul/2025 16:57:39] "GET /health HTTP/1.1" 200 -
+2025-07-14 16:57:41,119 - INFO - 127.0.0.1 - - [14/Jul/2025 16:57:41] "OPTIONS /predict HTTP/1.1" 200 -
+2025-07-14 16:57:41,446 - INFO - Successful prediction: {'overall_rating': 75.7, 'potential_rating': 68.8}
+2025-07-14 16:57:41,447 - INFO - 127.0.0.1 - - [14/Jul/2025 16:57:41] "POST /predict HTTP/1.1" 200 -
+2025-07-14 16:57:45,621 - INFO - Successful prediction: {'overall_rating': 75.7, 'potential_rating': 68.8}
+2025-07-14 16:57:45,622 - INFO - 127.0.0.1 - - [14/Jul/2025 16:57:45] "POST /predict HTTP/1.1" 200 -
+2025-07-14 16:57:46,443 - INFO - 127.0.0.1 - - [14/Jul/2025 16:57:46] "OPTIONS /predict HTTP/1.1" 200 -
+2025-07-14 16:57:46,704 - INFO - Successful prediction: {'overall_rating': 75.7, 'potential_rating': 68.8}
+2025-07-14 16:57:46,705 - INFO - 127.0.0.1 - - [14/Jul/2025 16:57:46] "POST /predict HTTP/1.1" 200 -
+2025-07-14 16:58:34,120 - INFO - 127.0.0.1 - - [14/Jul/2025 16:58:34] "GET /scenarios HTTP/1.1" 200 -
+2025-07-14 17:00:23,801 - INFO - 🚀 Starting Football Rating Prediction API...
+2025-07-14 17:00:23,801 - WARNING - ⚠️ Missing model files: ['random_forest_overall_model.pkl', 'random_forest_potential_model.pkl', 'feature_scaler.pkl', 'model_components.pkl']
+2025-07-14 17:00:23,802 - INFO - Creating dummy models for testing purposes...
+2025-07-14 17:00:25,041 - INFO - 🤖 Dummy models created for testing purposes
+2025-07-14 17:00:25,042 - INFO - ✅ API initialized successfully
+2025-07-14 17:00:25,042 - INFO - 🌐 Starting Flask server on http://localhost:5000
+2025-07-14 17:00:25,062 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.5:5000
+2025-07-14 17:00:25,063 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-14 17:05:28,455 - INFO - 🚀 Starting Football Rating Prediction API...
+2025-07-14 17:05:28,456 - INFO - 📁 Found models in python subfolder
+2025-07-14 17:05:28,456 - INFO - 📂 All model files found, loading real models...
+2025-07-14 17:05:30,923 - INFO - ✅ All models and components loaded successfully
+2025-07-14 17:05:30,923 - INFO - ✅ API initialized successfully
+2025-07-14 17:05:30,923 - INFO - 🌐 Starting Flask server on http://localhost:5000
+2025-07-14 17:05:30,946 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.5:5000
+2025-07-14 17:05:30,946 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-14 17:05:37,131 - INFO - 127.0.0.1 - - [14/Jul/2025 17:05:37] "GET /health HTTP/1.1" 200 -
+2025-07-14 17:05:37,394 - INFO - 127.0.0.1 - - [14/Jul/2025 17:05:37] "GET /health HTTP/1.1" 200 -
+2025-07-14 17:05:39,509 - INFO - 127.0.0.1 - - [14/Jul/2025 17:05:39] "OPTIONS /predict HTTP/1.1" 200 -
+2025-07-14 17:05:39,830 - WARNING - ⚠️  Feature 'attacking_finishing' not found in model features
+2025-07-14 17:05:39,830 - WARNING - ⚠️  Feature 'movement_sprint_speed' not found in model features
+2025-07-14 17:05:39,831 - WARNING - ⚠️  Feature 'pace' not found in model features
+2025-07-14 17:05:39,831 - WARNING - ⚠️  Feature 'shooting' not found in model features
+2025-07-14 17:05:39,831 - WARNING - ⚠️  Feature 'passing' not found in model features
+2025-07-14 17:05:39,985 - INFO - Successful prediction: {'overall_rating': 62.7, 'potential_rating': 70.6}
+2025-07-14 17:05:39,987 - INFO - 127.0.0.1 - - [14/Jul/2025 17:05:39] "POST /predict HTTP/1.1" 200 -
+2025-07-14 17:05:44,203 - WARNING - ⚠️  Feature 'attacking_short_passing' not found in model features
+2025-07-14 17:05:44,203 - WARNING - ⚠️  Feature 'skill_long_passing' not found in model features
+2025-07-14 17:05:44,418 - INFO - Successful prediction: {'overall_rating': 61.8, 'potential_rating': 65.0}
+2025-07-14 17:05:44,419 - INFO - 127.0.0.1 - - [14/Jul/2025 17:05:44] "POST /predict HTTP/1.1" 200 -
+2025-07-14 17:05:46,070 - INFO - 127.0.0.1 - - [14/Jul/2025 17:05:46] "OPTIONS /predict HTTP/1.1" 200 -
+2025-07-14 17:05:46,317 - WARNING - ⚠️  Feature 'power_strength' not found in model features
+2025-07-14 17:05:46,317 - WARNING - ⚠️  Feature 'power_jumping' not found in model features
+2025-07-14 17:05:46,524 - INFO - Successful prediction: {'overall_rating': 61.8, 'potential_rating': 66.1}
+2025-07-14 17:05:46,525 - INFO - 127.0.0.1 - - [14/Jul/2025 17:05:46] "POST /predict HTTP/1.1" 200 -
+2025-07-14 17:05:49,307 - WARNING - ⚠️  Feature 'attacking_short_passing' not found in model features
+2025-07-14 17:05:49,308 - WARNING - ⚠️  Feature 'skill_long_passing' not found in model features
+2025-07-14 17:05:49,525 - INFO - Successful prediction: {'overall_rating': 61.8, 'potential_rating': 65.0}
+2025-07-14 17:05:49,526 - INFO - 127.0.0.1 - - [14/Jul/2025 17:05:49] "POST /predict HTTP/1.1" 200 -
+2025-07-14 17:05:51,952 - INFO - 127.0.0.1 - - [14/Jul/2025 17:05:51] "OPTIONS /predict HTTP/1.1" 200 -
+2025-07-14 17:05:52,218 - WARNING - ⚠️  Feature 'power_strength' not found in model features
+2025-07-14 17:05:52,218 - WARNING - ⚠️  Feature 'power_jumping' not found in model features
+2025-07-14 17:05:52,421 - INFO - Successful prediction: {'overall_rating': 61.8, 'potential_rating': 66.1}
+2025-07-14 17:05:52,423 - INFO - 127.0.0.1 - - [14/Jul/2025 17:05:52] "POST /predict HTTP/1.1" 200 -
+2025-07-14 17:05:57,389 - INFO - 127.0.0.1 - - [14/Jul/2025 17:05:57] "OPTIONS /predict HTTP/1.1" 200 -
+2025-07-14 17:05:57,704 - WARNING - ⚠️  Feature 'attacking_finishing' not found in model features
+2025-07-14 17:05:57,705 - WARNING - ⚠️  Feature 'movement_sprint_speed' not found in model features
+2025-07-14 17:05:57,705 - WARNING - ⚠️  Feature 'pace' not found in model features
+2025-07-14 17:05:57,705 - WARNING - ⚠️  Feature 'shooting' not found in model features
+2025-07-14 17:05:57,706 - WARNING - ⚠️  Feature 'passing' not found in model features
+2025-07-14 17:05:57,909 - INFO - Successful prediction: {'overall_rating': 62.7, 'potential_rating': 70.6}
+2025-07-14 17:05:57,910 - INFO - 127.0.0.1 - - [14/Jul/2025 17:05:57] "POST /predict HTTP/1.1" 200 -
+2025-07-14 17:06:14,609 - INFO - 127.0.0.1 - - [14/Jul/2025 17:06:14] "OPTIONS /predict HTTP/1.1" 200 -
+2025-07-14 17:06:14,928 - WARNING - ⚠️  Feature 'attacking_finishing' not found in model features
+2025-07-14 17:06:14,929 - WARNING - ⚠️  Feature 'movement_sprint_speed' not found in model features
+2025-07-14 17:06:14,929 - WARNING - ⚠️  Feature 'pace' not found in model features
+2025-07-14 17:06:14,929 - WARNING - ⚠️  Feature 'shooting' not found in model features
+2025-07-14 17:06:14,929 - WARNING - ⚠️  Feature 'passing' not found in model features
+2025-07-14 17:06:15,131 - INFO - Successful prediction: {'overall_rating': 62.7, 'potential_rating': 70.6}
+2025-07-14 17:06:15,132 - INFO - 127.0.0.1 - - [14/Jul/2025 17:06:15] "POST /predict HTTP/1.1" 200 -
+2025-07-14 17:06:23,983 - INFO - 127.0.0.1 - - [14/Jul/2025 17:06:23] "GET /features HTTP/1.1" 200 -
+2025-07-14 17:13:45,981 - INFO - 127.0.0.1 - - [14/Jul/2025 17:13:45] "GET /health HTTP/1.1" 200 -
+2025-07-14 17:13:46,244 - INFO - 127.0.0.1 - - [14/Jul/2025 17:13:46] "GET /health HTTP/1.1" 200 -
+2025-07-14 17:13:47,524 - INFO - 127.0.0.1 - - [14/Jul/2025 17:13:47] "OPTIONS /predict HTTP/1.1" 200 -
+2025-07-14 17:13:47,990 - INFO - Successful prediction: {'overall_rating': 78.3, 'potential_rating': 82.9}
+2025-07-14 17:13:47,991 - INFO - 127.0.0.1 - - [14/Jul/2025 17:13:47] "POST /predict HTTP/1.1" 200 -
+2025-07-14 17:23:05,052 - INFO - 🚀 Starting Football Rating Prediction API...
+2025-07-14 17:23:05,053 - INFO - 📁 Found models in python subfolder
+2025-07-14 17:23:05,053 - INFO - 📂 All model files found, loading real models...
+2025-07-14 17:23:07,950 - INFO - ✅ All models and components loaded successfully
+2025-07-14 17:23:07,950 - INFO - ✅ API initialized successfully
+2025-07-14 17:23:07,950 - INFO - 🌐 Starting Flask server on http://localhost:5000
+2025-07-14 17:23:07,977 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.5:5000
+2025-07-14 17:23:07,977 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-14 17:32:49,870 - INFO - 127.0.0.1 - - [14/Jul/2025 17:32:49] "[33mGET /accuracy HTTP/1.1[0m" 404 -
+2025-07-14 17:32:49,873 - INFO - 127.0.0.1 - - [14/Jul/2025 17:32:49] "GET /health HTTP/1.1" 200 -
+2025-07-14 17:32:50,134 - INFO - 127.0.0.1 - - [14/Jul/2025 17:32:50] "[33mGET /accuracy HTTP/1.1[0m" 404 -
+2025-07-14 17:32:50,182 - INFO - 127.0.0.1 - - [14/Jul/2025 17:32:50] "GET /health HTTP/1.1" 200 -
+2025-07-14 17:32:51,649 - INFO - 127.0.0.1 - - [14/Jul/2025 17:32:51] "GET /health HTTP/1.1" 200 -
+2025-07-14 17:32:51,962 - INFO - 127.0.0.1 - - [14/Jul/2025 17:32:51] "[33mGET /accuracy HTTP/1.1[0m" 404 -
+2025-07-14 17:32:51,964 - INFO - 127.0.0.1 - - [14/Jul/2025 17:32:51] "GET /health HTTP/1.1" 200 -
+2025-07-14 17:32:52,282 - INFO - 127.0.0.1 - - [14/Jul/2025 17:32:52] "[33mGET /accuracy HTTP/1.1[0m" 404 -
+2025-07-14 17:33:12,010 - INFO - 🚀 Starting Football Rating Prediction API...
+2025-07-14 17:33:12,011 - INFO - 📁 Found models in python subfolder
+2025-07-14 17:33:12,012 - INFO - 📂 All model files found, loading real models...
+2025-07-14 17:33:14,493 - INFO - ✅ All models and components loaded successfully
+2025-07-14 17:33:14,493 - INFO - ✅ API initialized successfully
+2025-07-14 17:33:14,493 - INFO - 🌐 Starting Flask server on http://localhost:5000
+2025-07-14 17:33:14,528 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.5:5000
+2025-07-14 17:33:14,528 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-14 17:33:17,763 - INFO - 127.0.0.1 - - [14/Jul/2025 17:33:17] "GET /health HTTP/1.1" 200 -
+2025-07-14 17:33:17,764 - INFO - 127.0.0.1 - - [14/Jul/2025 17:33:17] "[33mGET /accuracy HTTP/1.1[0m" 404 -
+2025-07-14 17:33:18,032 - INFO - 127.0.0.1 - - [14/Jul/2025 17:33:18] "GET /health HTTP/1.1" 200 -
+2025-07-14 17:33:18,079 - INFO - 127.0.0.1 - - [14/Jul/2025 17:33:18] "[33mGET /accuracy HTTP/1.1[0m" 404 -
+2025-07-14 17:33:24,364 - INFO - 🚀 Starting Football Rating Prediction API...
+2025-07-14 17:33:24,365 - INFO - 📁 Found models in python subfolder
+2025-07-14 17:33:24,365 - INFO - 📂 All model files found, loading real models...
+2025-07-14 17:33:26,607 - INFO - ✅ All models and components loaded successfully
+2025-07-14 17:33:26,607 - INFO - ✅ API initialized successfully
+2025-07-14 17:33:26,608 - INFO - 🌐 Starting Flask server on http://localhost:5000
+2025-07-14 17:33:26,631 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.5:5000
+2025-07-14 17:33:26,631 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-14 17:33:30,419 - INFO - 127.0.0.1 - - [14/Jul/2025 17:33:30] "GET /health HTTP/1.1" 200 -
+2025-07-14 17:33:30,421 - INFO - 127.0.0.1 - - [14/Jul/2025 17:33:30] "[33mGET /accuracy HTTP/1.1[0m" 404 -
+2025-07-14 17:33:30,684 - INFO - 127.0.0.1 - - [14/Jul/2025 17:33:30] "GET /health HTTP/1.1" 200 -
+2025-07-14 17:33:30,731 - INFO - 127.0.0.1 - - [14/Jul/2025 17:33:30] "[33mGET /accuracy HTTP/1.1[0m" 404 -
+2025-07-14 17:33:34,695 - INFO - 127.0.0.1 - - [14/Jul/2025 17:33:34] "OPTIONS /predict HTTP/1.1" 200 -
+2025-07-14 17:33:35,003 - WARNING - ⚠️  Feature 'attacking_finishing' not found in model features
+2025-07-14 17:33:35,003 - WARNING - ⚠️  Feature 'movement_sprint_speed' not found in model features
+2025-07-14 17:33:35,218 - INFO - Successful prediction: {'overall_rating': 61.5, 'potential_rating': 69.3}
+2025-07-14 17:33:35,219 - INFO - 127.0.0.1 - - [14/Jul/2025 17:33:35] "POST /predict HTTP/1.1" 200 -
+2025-07-14 17:36:04,611 - INFO - 127.0.0.1 - - [14/Jul/2025 17:36:04] "GET /health HTTP/1.1" 200 -
+2025-07-14 17:38:49,454 - INFO - 🚀 Starting Football Rating Prediction API with Accuracy...
+2025-07-14 17:38:49,455 - WARNING - ⚠️ Missing model files: ['random_forest_overall_model.pkl', 'random_forest_potential_model.pkl', 'feature_scaler.pkl', 'model_components.pkl']
+2025-07-14 17:38:49,455 - INFO - Creating dummy models for testing purposes...
+2025-07-14 17:38:50,703 - INFO - 🤖 Dummy models created for testing purposes
+2025-07-14 17:38:50,703 - INFO - ✅ API initialized successfully with accuracy calculation
+2025-07-14 17:38:50,704 - INFO - 🌐 Starting Flask server on http://localhost:5000
+2025-07-14 17:38:50,724 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.5:5000
+2025-07-14 17:38:50,725 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-14 17:39:02,801 - INFO - 🚀 Starting Football Rating Prediction API with Accuracy...
+2025-07-14 17:39:02,802 - WARNING - ⚠️ Missing model files: ['random_forest_overall_model.pkl', 'random_forest_potential_model.pkl', 'feature_scaler.pkl', 'model_components.pkl']
+2025-07-14 17:39:02,802 - INFO - Creating dummy models for testing purposes...
+2025-07-14 17:39:03,949 - INFO - 🤖 Dummy models created for testing purposes
+2025-07-14 17:39:03,950 - INFO - ✅ API initialized successfully with accuracy calculation
+2025-07-14 17:39:03,950 - INFO - 🌐 Starting Flask server on http://localhost:5000
+2025-07-14 17:39:03,971 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.5:5000
+2025-07-14 17:39:03,972 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-14 17:40:03,665 - INFO - 🚀 Starting Football Rating Prediction API with Accuracy...
+2025-07-14 17:40:03,666 - WARNING - ⚠️ Missing model files: ['random_forest_overall_model.pkl', 'random_forest_potential_model.pkl', 'feature_scaler.pkl', 'model_components.pkl']
+2025-07-14 17:40:03,667 - INFO - Creating dummy models for testing purposes...
+2025-07-14 17:40:04,829 - INFO - 🤖 Dummy models created for testing purposes
+2025-07-14 17:40:04,830 - INFO - ✅ API initialized successfully with accuracy calculation
+2025-07-14 17:40:04,830 - INFO - 🌐 Starting Flask server on http://localhost:5000
+2025-07-14 17:40:04,852 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.5:5000
+2025-07-14 17:40:04,852 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-14 17:40:17,783 - INFO - 🚀 Starting Football Rating Prediction API with Accuracy...
+2025-07-14 17:40:17,783 - WARNING - ⚠️ Missing model files: ['random_forest_overall_model.pkl', 'random_forest_potential_model.pkl', 'feature_scaler.pkl', 'model_components.pkl']
+2025-07-14 17:40:17,784 - INFO - Creating dummy models for testing purposes...
+2025-07-14 17:40:18,961 - INFO - 🤖 Dummy models created for testing purposes
+2025-07-14 17:40:18,962 - INFO - ✅ API initialized successfully with accuracy calculation
+2025-07-14 17:40:18,962 - INFO - 🌐 Starting Flask server on http://localhost:5000
+2025-07-14 17:40:18,983 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.5:5000
+2025-07-14 17:40:18,983 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-14 17:40:59,009 - INFO - 🚀 Starting Football Rating Prediction API...
+2025-07-14 17:40:59,010 - INFO - 📁 Found models in python subfolder
+2025-07-14 17:40:59,010 - INFO - 📂 All model files found, loading real models...
+2025-07-14 17:42:38,543 - INFO - 🚀 Starting Football Rating Prediction API...
+2025-07-14 17:42:38,544 - INFO - 📁 Found models in python subfolder
+2025-07-14 17:42:38,544 - INFO - 📂 All model files found, loading real models...
+2025-07-14 17:42:41,430 - INFO - ✅ All models and components loaded successfully
+2025-07-14 17:42:41,431 - INFO - ✅ API initialized successfully
+2025-07-14 17:42:41,431 - INFO - 🌐 Starting Flask server on http://localhost:5000
+2025-07-14 17:42:41,455 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.5:5000
+2025-07-14 17:42:41,455 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-14 17:42:42,048 - INFO - 127.0.0.1 - - [14/Jul/2025 17:42:42] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+2025-07-14 17:42:46,620 - INFO - 127.0.0.1 - - [14/Jul/2025 17:42:46] "[31m[1mPOST /predict HTTP/1.1[0m" 400 -
+2025-07-14 17:43:29,228 - INFO - 127.0.0.1 - - [14/Jul/2025 17:43:29] "[31m[1mPOST /predict HTTP/1.1[0m" 400 -
+2025-07-14 17:43:40,228 - INFO - 127.0.0.1 - - [14/Jul/2025 17:43:40] "OPTIONS /predict HTTP/1.1" 200 -
+2025-07-14 17:43:40,645 - INFO - Successful prediction: {'overall_rating': 78.3, 'potential_rating': 82.9}
+2025-07-14 17:43:40,646 - INFO - 127.0.0.1 - - [14/Jul/2025 17:43:40] "POST /predict HTTP/1.1" 200 -
+2025-07-14 17:43:47,869 - INFO - 127.0.0.1 - - [14/Jul/2025 17:43:47] "OPTIONS /predict HTTP/1.1" 200 -
+2025-07-14 17:43:48,349 - INFO - Successful prediction: {'overall_rating': 78.3, 'potential_rating': 82.9}
+2025-07-14 17:43:48,350 - INFO - 127.0.0.1 - - [14/Jul/2025 17:43:48] "POST /predict HTTP/1.1" 200 -
+2025-07-14 17:44:36,846 - INFO - Successful prediction: {'overall_rating': 61.5, 'potential_rating': 69.3}
+2025-07-14 17:44:36,848 - INFO - 127.0.0.1 - - [14/Jul/2025 17:44:36] "POST /predict HTTP/1.1" 200 -
+2025-07-14 17:45:05,572 - INFO - Successful prediction: {'overall_rating': 61.5, 'potential_rating': 69.3}
+2025-07-14 17:45:05,573 - INFO - 127.0.0.1 - - [14/Jul/2025 17:45:05] "POST /predict HTTP/1.1" 200 -
+2025-07-14 17:51:11,926 - INFO - Successful prediction: {'overall_rating': 61.5, 'potential_rating': 69.3}
+2025-07-14 17:51:11,927 - INFO - 127.0.0.1 - - [14/Jul/2025 17:51:11] "POST /predict HTTP/1.1" 200 -
+2025-07-14 17:51:52,901 - INFO - 🚀 Starting Football Rating Prediction API with Accuracy...
+2025-07-14 17:51:52,902 - INFO - 📁 Found models in python subfolder
+2025-07-14 17:51:52,902 - INFO - 📂 All model files found, loading real models...
+2025-07-14 17:51:55,434 - INFO - ✅ All models and components loaded successfully
+2025-07-14 17:51:55,435 - INFO - ✅ API initialized successfully with accuracy calculation
+2025-07-14 17:51:55,435 - INFO - 🌐 Starting Flask server on http://localhost:5000
+2025-07-14 17:51:55,459 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.5:5000
+2025-07-14 17:51:55,459 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-14 17:51:56,376 - INFO - Successful prediction: {'overall_rating': 61.5, 'potential_rating': 69.3} (Accuracy: 70.0%)
+2025-07-14 17:51:56,378 - INFO - 127.0.0.1 - - [14/Jul/2025 17:51:56] "POST /predict HTTP/1.1" 200 -
+2025-07-14 17:53:01,836 - ERROR - Unexpected error: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "C:\Users\Frans\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\wrappers\request.py", line 608, in get_json
+    rv = self.json_module.loads(data)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Frans\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\json\provider.py", line 187, in loads
+    return json.loads(s, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Frans\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Frans\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Frans\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting ',' delimiter: line 4 column 12 (char 51)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Frans\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\wrappers.py", line 131, in on_json_loading_failed
+    return super().on_json_loading_failed(e)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Frans\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\wrappers\request.py", line 642, in on_json_loading_failed
+    raise BadRequest(f"Failed to decode JSON object: {e}")
+werkzeug.exceptions.BadRequest: 400 Bad Request: Failed to decode JSON object: Expecting ',' delimiter: line 4 column 12 (char 51)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Semester 6\Data Science\football-rating-predict\python\app.py", line 354, in predict
+    data = request.get_json()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Frans\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\wrappers\request.py", line 617, in get_json
+    rv = self.on_json_loading_failed(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Frans\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\wrappers.py", line 136, in on_json_loading_failed
+    raise BadRequest() from e
+werkzeug.exceptions.BadRequest: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+
+2025-07-14 17:53:01,838 - INFO - 127.0.0.1 - - [14/Jul/2025 17:53:01] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-07-14 17:53:09,945 - INFO - Successful prediction: {'overall_rating': 78.3, 'potential_rating': 83.1} (Accuracy: 70.0%)
+2025-07-14 17:53:09,947 - INFO - 127.0.0.1 - - [14/Jul/2025 17:53:09] "POST /predict HTTP/1.1" 200 -
+2025-07-14 17:53:45,427 - ERROR - Unexpected error: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "C:\Users\Frans\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\wrappers\request.py", line 608, in get_json
+    rv = self.json_module.loads(data)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Frans\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\json\provider.py", line 187, in loads
+    return json.loads(s, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Frans\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Frans\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Frans\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 27 column 5 (char 253)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Frans\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\wrappers.py", line 131, in on_json_loading_failed
+    return super().on_json_loading_failed(e)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Frans\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\wrappers\request.py", line 642, in on_json_loading_failed
+    raise BadRequest(f"Failed to decode JSON object: {e}")
+werkzeug.exceptions.BadRequest: 400 Bad Request: Failed to decode JSON object: Expecting property name enclosed in double quotes: line 27 column 5 (char 253)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Semester 6\Data Science\football-rating-predict\python\app.py", line 354, in predict
+    data = request.get_json()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Frans\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\wrappers\request.py", line 617, in get_json
+    rv = self.on_json_loading_failed(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Frans\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\wrappers.py", line 136, in on_json_loading_failed
+    raise BadRequest() from e
+werkzeug.exceptions.BadRequest: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+
+2025-07-14 17:53:45,429 - INFO - 127.0.0.1 - - [14/Jul/2025 17:53:45] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-07-14 17:53:49,612 - INFO - Successful prediction: {'overall_rating': 61.5, 'potential_rating': 69.3} (Accuracy: 70.0%)
+2025-07-14 17:53:49,614 - INFO - 127.0.0.1 - - [14/Jul/2025 17:53:49] "POST /predict HTTP/1.1" 200 -
+2025-07-14 17:54:10,443 - INFO - Successful prediction: {'overall_rating': 78.3, 'potential_rating': 83.1} (Accuracy: 70.0%)
+2025-07-14 17:54:10,444 - INFO - 127.0.0.1 - - [14/Jul/2025 17:54:10] "POST /predict HTTP/1.1" 200 -
+2025-07-14 17:54:13,504 - INFO - Successful prediction: {'overall_rating': 78.3, 'potential_rating': 82.9} (Accuracy: 70.0%)
+2025-07-14 17:54:13,505 - INFO - 127.0.0.1 - - [14/Jul/2025 17:54:13] "POST /predict HTTP/1.1" 200 -
+2025-07-14 17:54:24,306 - INFO - Successful prediction: {'overall_rating': 61.5, 'potential_rating': 69.3} (Accuracy: 70.0%)
+2025-07-14 17:54:24,307 - INFO - 127.0.0.1 - - [14/Jul/2025 17:54:24] "POST /predict HTTP/1.1" 200 -
+2025-07-14 17:54:32,195 - INFO - Successful prediction: {'overall_rating': 78.3, 'potential_rating': 83.1} (Accuracy: 70.0%)
+2025-07-14 17:54:32,196 - INFO - 127.0.0.1 - - [14/Jul/2025 17:54:32] "POST /predict HTTP/1.1" 200 -
+2025-07-14 17:55:35,232 - INFO - Successful prediction: {'overall_rating': 78.3, 'potential_rating': 83.1} (Accuracy: 70.0%)
+2025-07-14 17:55:35,233 - INFO - 127.0.0.1 - - [14/Jul/2025 17:55:35] "POST /predict HTTP/1.1" 200 -
+2025-07-14 18:52:36,953 - INFO - 127.0.0.1 - - [14/Jul/2025 18:52:36] "GET /health HTTP/1.1" 200 -
+2025-07-14 18:52:37,214 - INFO - 127.0.0.1 - - [14/Jul/2025 18:52:37] "GET /health HTTP/1.1" 200 -
+2025-07-14 19:05:44,883 - INFO - 127.0.0.1 - - [14/Jul/2025 19:05:44] "GET /health HTTP/1.1" 200 -
+2025-07-14 19:05:45,121 - INFO - 127.0.0.1 - - [14/Jul/2025 19:05:45] "GET /health HTTP/1.1" 200 -
+2025-07-14 19:10:02,444 - INFO - Successful prediction: {'overall_rating': 78.3, 'potential_rating': 83.1} (Accuracy: 70.0%)
+2025-07-14 19:10:02,445 - INFO - 127.0.0.1 - - [14/Jul/2025 19:10:02] "POST /predict HTTP/1.1" 200 -
+2025-07-14 19:10:13,376 - INFO - 🚀 Starting Football Rating Prediction API with Accuracy...
+2025-07-14 19:10:13,377 - INFO - 📁 Found models in python subfolder
+2025-07-14 19:10:13,377 - INFO - 📂 All model files found, loading real models...
+2025-07-14 19:10:16,401 - INFO - ✅ All models and components loaded successfully
+2025-07-14 19:10:16,401 - INFO - ✅ API initialized successfully with accuracy calculation
+2025-07-14 19:10:16,401 - INFO - 🌐 Starting Flask server on http://localhost:5000
+2025-07-14 19:10:16,437 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.5:5000
+2025-07-14 19:10:16,438 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-14 19:11:11,555 - INFO - Successful prediction: {'overall_rating': 78.3, 'potential_rating': 83.1} (Accuracy: 51.2%)
+2025-07-14 19:11:11,557 - INFO - 127.0.0.1 - - [14/Jul/2025 19:11:11] "POST /predict HTTP/1.1" 200 -
+2025-07-14 19:12:17,582 - INFO - 127.0.0.1 - - [14/Jul/2025 19:12:17] "GET /features HTTP/1.1" 200 -
+2025-07-14 19:13:55,848 - ERROR - Unexpected error: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "C:\Users\Frans\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\wrappers\request.py", line 608, in get_json
+    rv = self.json_module.loads(data)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Frans\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\json\provider.py", line 187, in loads
+    return json.loads(s, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Frans\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Frans\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 63 column 1 (char 1637)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Frans\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\wrappers.py", line 131, in on_json_loading_failed
+    return super().on_json_loading_failed(e)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Frans\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\wrappers\request.py", line 642, in on_json_loading_failed
+    raise BadRequest(f"Failed to decode JSON object: {e}")
+werkzeug.exceptions.BadRequest: 400 Bad Request: Failed to decode JSON object: Extra data: line 63 column 1 (char 1637)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Semester 6\Data Science\football-rating-predict\python\app.py", line 354, in predict
+    data = request.get_json()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Frans\AppData\Local\Programs\Python\Python312\Lib\site-packages\werkzeug\wrappers\request.py", line 617, in get_json
+    rv = self.on_json_loading_failed(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Frans\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\wrappers.py", line 136, in on_json_loading_failed
+    raise BadRequest() from e
+werkzeug.exceptions.BadRequest: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+
+2025-07-14 19:13:55,850 - INFO - 127.0.0.1 - - [14/Jul/2025 19:13:55] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-07-14 19:14:21,927 - INFO - Successful prediction: {'overall_rating': 88.5, 'potential_rating': 91.0} (Accuracy: 88.3%)
+2025-07-14 19:14:21,928 - INFO - 127.0.0.1 - - [14/Jul/2025 19:14:21] "POST /predict HTTP/1.1" 200 -
+2025-07-15 11:23:14,718 - INFO - 🚀 Starting Football Rating Prediction API with Accuracy...
+2025-07-15 11:23:14,719 - INFO - 📁 Found models in python subfolder
+2025-07-15 11:23:14,719 - INFO - 📂 All model files found, loading real models...
+2025-07-15 11:23:18,079 - INFO - ✅ All models and components loaded successfully
+2025-07-15 11:23:18,080 - INFO - ✅ API initialized successfully with accuracy calculation
+2025-07-15 11:23:18,080 - INFO - 🌐 Starting Flask server on http://localhost:5000
+2025-07-15 11:23:18,106 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.5:5000
+2025-07-15 11:23:18,106 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-15 11:23:20,846 - INFO - 127.0.0.1 - - [15/Jul/2025 11:23:20] "GET /features HTTP/1.1" 200 -
+2025-07-16 16:04:12,921 - INFO - Initializing Football Rating Prediction API
+2025-07-16 16:04:12,923 - INFO - Created model directory: models
+2025-07-16 16:04:12,923 - ERROR - Model file not found: models\rf_overall_model.pkl
+2025-07-16 16:04:12,923 - ERROR - Failed to load models. Please ensure model files are in the models/ directory
+2025-07-16 16:04:12,923 - ERROR - Failed to initialize application
+2025-07-16 16:08:34,349 - INFO - Initializing Football Rating Prediction API
+2025-07-16 16:09:41,964 - INFO - Initializing Football Rating Prediction API
+2025-07-16 16:09:41,964 - ERROR - Model file not found: .\rf_overall_model.pkl
+2025-07-16 16:09:41,964 - ERROR - Failed to load models. Please ensure model files are in the models/ directory
+2025-07-16 16:09:41,965 - ERROR - Failed to initialize application
+2025-07-16 16:11:10,099 - INFO - Initializing Football Rating Prediction API
+2025-07-16 16:11:13,792 - INFO - Models loaded successfully
+2025-07-16 16:11:13,793 - INFO - Features available: 22
+2025-07-16 16:11:13,793 - INFO - Categorical encoders: ['positions', 'preferred_foot', 'body_type']
+2025-07-16 16:11:13,793 - INFO - API initialized successfully
+2025-07-16 16:11:13,793 - INFO - Starting Football Rating Prediction API server...
+2025-07-16 16:11:13,833 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.5:5000
+2025-07-16 16:11:13,833 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-16 16:11:13,836 - INFO -  * Restarting with stat
+2025-07-16 16:11:14,844 - INFO - Initializing Football Rating Prediction API
+2025-07-16 16:11:17,455 - INFO - Models loaded successfully
+2025-07-16 16:11:17,456 - INFO - Features available: 22
+2025-07-16 16:11:17,456 - INFO - Categorical encoders: ['positions', 'preferred_foot', 'body_type']
+2025-07-16 16:11:17,457 - INFO - API initialized successfully
+2025-07-16 16:11:17,457 - INFO - Starting Football Rating Prediction API server...
+2025-07-16 16:11:17,482 - WARNING -  * Debugger is active!
+2025-07-16 16:11:17,549 - INFO -  * Debugger PIN: 102-047-799
+2025-07-16 16:12:24,240 - INFO - Prediction made: Overall=53.3, Potential=69.1
+2025-07-16 16:12:24,243 - INFO - 127.0.0.1 - - [16/Jul/2025 16:12:24] "POST /predict HTTP/1.1" 200 -
+2025-07-16 16:14:46,421 - INFO - 127.0.0.1 - - [16/Jul/2025 16:14:46] "GET /features HTTP/1.1" 200 -
+2025-07-16 16:15:59,694 - INFO - Prediction made: Overall=54.7, Potential=70.6
+2025-07-16 16:15:59,695 - INFO - 127.0.0.1 - - [16/Jul/2025 16:15:59] "POST /predict HTTP/1.1" 200 -
+2025-07-16 16:16:41,427 - ERROR - Error creating feature vector: could not convert string to float: 'Normal'
+2025-07-16 16:16:41,570 - INFO - Prediction made: Overall=54.5, Potential=70.3
+2025-07-16 16:16:41,571 - INFO - 127.0.0.1 - - [16/Jul/2025 16:16:41] "POST /predict HTTP/1.1" 200 -
+2025-07-16 16:17:21,274 - ERROR - Error in predict endpoint: 400 Bad Request: Failed to decode JSON object: Expecting ',' delimiter: line 6 column 3 (char 85)
+2025-07-16 16:17:21,275 - INFO - 127.0.0.1 - - [16/Jul/2025 16:17:21] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-07-16 16:17:23,763 - INFO - Prediction made: Overall=54.7, Potential=70.6
+2025-07-16 16:17:23,765 - INFO - 127.0.0.1 - - [16/Jul/2025 16:17:23] "POST /predict HTTP/1.1" 200 -
+2025-07-16 16:19:20,117 - INFO - Prediction made: Overall=54.7, Potential=70.6
+2025-07-16 16:19:20,119 - INFO - 127.0.0.1 - - [16/Jul/2025 16:19:20] "POST /predict HTTP/1.1" 200 -
+2025-07-16 16:19:22,283 - INFO - Prediction made: Overall=54.7, Potential=70.6
+2025-07-16 16:19:22,284 - INFO - 127.0.0.1 - - [16/Jul/2025 16:19:22] "POST /predict HTTP/1.1" 200 -
+2025-07-16 16:19:32,733 - INFO - Prediction made: Overall=54.7, Potential=70.6
+2025-07-16 16:19:32,735 - INFO - 127.0.0.1 - - [16/Jul/2025 16:19:32] "POST /predict HTTP/1.1" 200 -
+2025-07-16 16:19:37,899 - INFO - Prediction made: Overall=54.7, Potential=70.6
+2025-07-16 16:19:37,900 - INFO - 127.0.0.1 - - [16/Jul/2025 16:19:37] "POST /predict HTTP/1.1" 200 -
+2025-07-16 16:20:25,975 - INFO - 127.0.0.1 - - [16/Jul/2025 16:20:25] "GET /example_request HTTP/1.1" 200 -
+2025-07-16 16:23:08,931 - INFO -  * Detected change in 'E:\\Semester 6\\Data Science\\football-rating-predict\\python\\tes.py', reloading
+2025-07-16 16:23:09,403 - INFO -  * Restarting with stat
+2025-07-16 16:23:10,684 - INFO - Initializing Football Rating Prediction API
+2025-07-16 16:23:13,345 - INFO - Models loaded successfully
+2025-07-16 16:23:13,345 - INFO - Features available: 22
+2025-07-16 16:23:13,346 - INFO - Categorical encoders: ['positions', 'preferred_foot', 'body_type']
+2025-07-16 16:23:13,346 - INFO - API initialized successfully
+2025-07-16 16:23:13,346 - INFO - Starting Football Rating Prediction API server...
+2025-07-16 16:23:13,360 - WARNING -  * Debugger is active!
+2025-07-16 16:23:13,378 - INFO -  * Debugger PIN: 102-047-799
+2025-07-16 16:26:44,869 - INFO -  * Detected change in 'E:\\Semester 6\\Data Science\\football-rating-predict\\python\\tes.py', reloading
+2025-07-16 16:26:45,156 - INFO -  * Restarting with stat
+2025-07-16 16:26:49,335 - INFO - Initializing Football Rating Prediction API
+2025-07-16 16:26:51,611 - INFO - Models loaded successfully
+2025-07-16 16:26:51,612 - INFO - Features available: 22
+2025-07-16 16:26:51,612 - INFO - Categorical encoders: ['positions', 'preferred_foot', 'body_type']
+2025-07-16 16:26:51,612 - INFO - API initialized successfully
+2025-07-16 16:26:51,612 - INFO - Starting Football Rating Prediction API server...
+2025-07-16 16:26:51,643 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.5:5000
+2025-07-16 16:26:51,644 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-16 16:26:51,646 - INFO -  * Restarting with stat
+2025-07-16 16:26:52,652 - INFO - Initializing Football Rating Prediction API
+2025-07-16 16:26:54,834 - INFO - Models loaded successfully
+2025-07-16 16:26:54,835 - INFO - Features available: 22
+2025-07-16 16:26:54,835 - INFO - Categorical encoders: ['positions', 'preferred_foot', 'body_type']
+2025-07-16 16:26:54,835 - INFO - API initialized successfully
+2025-07-16 16:26:54,835 - INFO - Starting Football Rating Prediction API server...
+2025-07-16 16:26:54,845 - WARNING -  * Debugger is active!
+2025-07-16 16:26:54,854 - INFO -  * Debugger PIN: 102-047-799
+2025-07-16 16:27:06,691 - INFO - Prediction made: Overall=54.7, Potential=70.6
+2025-07-16 16:27:06,692 - INFO - 127.0.0.1 - - [16/Jul/2025 16:27:06] "POST /predict HTTP/1.1" 200 -
+2025-07-16 16:27:40,544 - INFO -  * Detected change in 'E:\\Semester 6\\Data Science\\football-rating-predict\\python\\tes.py', reloading
+2025-07-16 16:27:40,830 - INFO -  * Restarting with stat
+2025-07-16 16:27:43,614 - INFO - Initializing Football Rating Prediction API
+2025-07-16 16:27:45,817 - INFO - Models loaded successfully
+2025-07-16 16:27:45,817 - INFO - Features available: 22
+2025-07-16 16:27:45,817 - INFO - Categorical encoders: ['positions', 'preferred_foot', 'body_type']
+2025-07-16 16:27:45,817 - INFO - API initialized successfully
+2025-07-16 16:27:45,818 - INFO - Starting Football Rating Prediction API server...
+2025-07-16 16:27:45,844 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.5:5000
+2025-07-16 16:27:45,844 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-16 16:27:45,846 - INFO -  * Restarting with stat
+2025-07-16 16:27:46,851 - INFO - Initializing Football Rating Prediction API
+2025-07-16 16:27:49,209 - INFO - Models loaded successfully
+2025-07-16 16:27:49,209 - INFO - Features available: 22
+2025-07-16 16:27:49,210 - INFO - Categorical encoders: ['positions', 'preferred_foot', 'body_type']
+2025-07-16 16:27:49,210 - INFO - API initialized successfully
+2025-07-16 16:27:49,210 - INFO - Starting Football Rating Prediction API server...
+2025-07-16 16:27:49,220 - WARNING -  * Debugger is active!
+2025-07-16 16:27:49,230 - INFO -  * Debugger PIN: 102-047-799
+2025-07-16 16:27:49,519 - INFO - Prediction made: Overall=54.7, Potential=70.6
+2025-07-16 16:27:49,521 - INFO - 127.0.0.1 - - [16/Jul/2025 16:27:49] "POST /predict HTTP/1.1" 200 -
+2025-07-16 16:28:10,788 - INFO -  * Detected change in 'E:\\Semester 6\\Data Science\\football-rating-predict\\python\\tes.py', reloading
+2025-07-16 16:28:11,090 - INFO -  * Restarting with stat
+2025-07-16 16:28:12,141 - INFO - Initializing Football Rating Prediction API
+2025-07-16 16:28:14,431 - INFO - Models loaded successfully
+2025-07-16 16:28:14,431 - INFO - Features available: 22
+2025-07-16 16:28:14,432 - INFO - Categorical encoders: ['positions', 'preferred_foot', 'body_type']
+2025-07-16 16:28:14,432 - INFO - API initialized successfully
+2025-07-16 16:28:14,433 - INFO - Starting Football Rating Prediction API server...
+2025-07-16 16:28:14,443 - WARNING -  * Debugger is active!
+2025-07-16 16:28:14,452 - INFO -  * Debugger PIN: 102-047-799
+2025-07-16 16:28:16,401 - INFO - Prediction made: Overall=54.7, Potential=70.6
+2025-07-16 16:28:16,403 - INFO - 127.0.0.1 - - [16/Jul/2025 16:28:16] "POST /predict HTTP/1.1" 200 -
+2025-07-16 16:28:40,358 - INFO -  * Detected change in 'E:\\Semester 6\\Data Science\\football-rating-predict\\python\\tes.py', reloading
+2025-07-16 16:28:40,652 - INFO -  * Restarting with stat
+2025-07-16 16:28:41,665 - INFO - Initializing Football Rating Prediction API
+2025-07-16 16:28:44,095 - INFO - Models loaded successfully
+2025-07-16 16:28:44,095 - INFO - Features available: 22
+2025-07-16 16:28:44,098 - INFO - Categorical encoders: ['positions', 'preferred_foot', 'body_type']
+2025-07-16 16:28:44,098 - INFO - API initialized successfully
+2025-07-16 16:28:44,098 - INFO - Starting Football Rating Prediction API server...
+2025-07-16 16:28:44,108 - WARNING -  * Debugger is active!
+2025-07-16 16:28:44,125 - INFO -  * Debugger PIN: 102-047-799
+2025-07-16 16:28:44,421 - INFO - Prediction made: Overall=54.7, Potential=70.6
+2025-07-16 16:28:44,422 - INFO - 127.0.0.1 - - [16/Jul/2025 16:28:44] "POST /predict HTTP/1.1" 200 -
+2025-07-16 16:29:12,392 - INFO -  * Detected change in 'E:\\Semester 6\\Data Science\\football-rating-predict\\python\\tes.py', reloading
+2025-07-16 16:29:12,684 - INFO -  * Restarting with stat
+2025-07-16 16:29:13,730 - INFO - Initializing Football Rating Prediction API
+2025-07-16 16:29:15,947 - INFO - Models loaded successfully
+2025-07-16 16:29:15,947 - INFO - Features available: 22
+2025-07-16 16:29:15,947 - INFO - Categorical encoders: ['positions', 'preferred_foot', 'body_type']
+2025-07-16 16:29:15,947 - INFO - API initialized successfully
+2025-07-16 16:29:15,949 - INFO - Starting Football Rating Prediction API server...
+2025-07-16 16:29:15,962 - WARNING -  * Debugger is active!
+2025-07-16 16:29:15,973 - INFO -  * Debugger PIN: 102-047-799
+2025-07-16 16:29:18,717 - INFO - Prediction made: Overall=54.7, Potential=70.6
+2025-07-16 16:29:18,718 - INFO - 127.0.0.1 - - [16/Jul/2025 16:29:18] "POST /predict HTTP/1.1" 200 -
+2025-07-16 16:29:20,306 - INFO - Prediction made: Overall=54.7, Potential=70.6
+2025-07-16 16:29:20,307 - INFO - 127.0.0.1 - - [16/Jul/2025 16:29:20] "POST /predict HTTP/1.1" 200 -
+2025-07-16 16:29:21,861 - INFO - Prediction made: Overall=54.7, Potential=70.6
+2025-07-16 16:29:21,862 - INFO - 127.0.0.1 - - [16/Jul/2025 16:29:21] "POST /predict HTTP/1.1" 200 -
+2025-07-16 16:30:22,454 - INFO - Prediction made: Overall=54.7, Potential=70.6
+2025-07-16 16:30:22,455 - INFO - 127.0.0.1 - - [16/Jul/2025 16:30:22] "POST /predict HTTP/1.1" 200 -
+2025-07-16 16:30:27,951 - ERROR - Error in predict endpoint: 400 Bad Request: Failed to decode JSON object: Expecting property name enclosed in double quotes: line 25 column 3 (char 118)
+2025-07-16 16:30:27,952 - INFO - 127.0.0.1 - - [16/Jul/2025 16:30:27] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-07-16 16:30:30,765 - INFO - Prediction made: Overall=53.1, Potential=68.5
+2025-07-16 16:30:30,767 - INFO - 127.0.0.1 - - [16/Jul/2025 16:30:30] "POST /predict HTTP/1.1" 200 -
+2025-07-16 16:30:51,367 - INFO - Prediction made: Overall=54.7, Potential=70.6
+2025-07-16 16:30:51,368 - INFO - 127.0.0.1 - - [16/Jul/2025 16:30:51] "POST /predict HTTP/1.1" 200 -
+2025-07-16 16:30:53,338 - INFO - Prediction made: Overall=54.7, Potential=70.6
+2025-07-16 16:30:53,340 - INFO - 127.0.0.1 - - [16/Jul/2025 16:30:53] "POST /predict HTTP/1.1" 200 -
+2025-07-16 16:33:24,229 - INFO -  * Detected change in 'E:\\Semester 6\\Data Science\\football-rating-predict\\python\\test2.py', reloading
+2025-07-16 16:33:24,548 - INFO -  * Restarting with stat
+2025-07-16 16:38:55,716 - INFO - Initializing Football Rating Prediction API
+2025-07-16 16:38:56,898 - INFO - Models loaded successfully
+2025-07-16 16:38:56,898 - INFO - Features available: 22
+2025-07-16 16:38:56,899 - INFO - Categorical encoders: ['positions', 'preferred_foot', 'body_type']
+2025-07-16 16:38:56,899 - INFO - API initialized successfully
+2025-07-16 16:38:56,899 - INFO - Starting Football Rating Prediction API server...
+2025-07-16 16:38:56,929 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.5:5000
+2025-07-16 16:38:56,929 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-16 16:38:56,931 - INFO -  * Restarting with stat
+2025-07-16 16:38:59,031 - INFO - Initializing Football Rating Prediction API
+2025-07-16 16:39:00,399 - INFO - Models loaded successfully
+2025-07-16 16:39:00,399 - INFO - Features available: 22
+2025-07-16 16:39:00,400 - INFO - Categorical encoders: ['positions', 'preferred_foot', 'body_type']
+2025-07-16 16:39:00,400 - INFO - API initialized successfully
+2025-07-16 16:39:00,400 - INFO - Starting Football Rating Prediction API server...
+2025-07-16 16:39:00,412 - WARNING -  * Debugger is active!
+2025-07-16 16:39:00,431 - INFO -  * Debugger PIN: 102-047-799
+2025-07-16 16:39:02,205 - ERROR - Error calculating feature quality: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2025-07-16 16:39:02,230 - ERROR - Error calculating feature quality: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+2025-07-16 16:39:02,231 - INFO - Dynamic prediction made: Overall=54.7 (confidence: 79.0%), Potential=70.6 (confidence: 75.8%)
+2025-07-16 16:39:02,231 - INFO - 127.0.0.1 - - [16/Jul/2025 16:39:02] "POST /predict HTTP/1.1" 200 -
+2025-07-16 16:42:22,118 - INFO -  * Detected change in 'E:\\Semester 6\\Data Science\\football-rating-predict\\python\\tes.py', reloading
+2025-07-16 16:42:22,453 - INFO -  * Restarting with stat
+2025-07-16 16:42:23,529 - INFO - Initializing Football Rating Prediction API
+2025-07-16 16:42:26,215 - INFO - Models loaded successfully
+2025-07-16 16:42:26,215 - INFO - Features available: 22
+2025-07-16 16:42:26,216 - INFO - Categorical encoders: ['positions', 'preferred_foot', 'body_type']
+2025-07-16 16:42:26,216 - INFO - API initialized successfully
+2025-07-16 16:42:26,216 - INFO - Starting Football Rating Prediction API server...
+2025-07-16 16:42:26,227 - WARNING -  * Debugger is active!
+2025-07-16 16:42:26,238 - INFO -  * Debugger PIN: 102-047-799
+2025-07-16 16:42:26,528 - INFO - Prediction made: Overall=54.7, Potential=70.6
+2025-07-16 16:42:26,530 - INFO - 127.0.0.1 - - [16/Jul/2025 16:42:26] "POST /predict HTTP/1.1" 200 -
+2025-07-16 16:42:45,420 - ERROR - Error in predict endpoint: 400 Bad Request: Failed to decode JSON object: Expecting property name enclosed in double quotes: line 6 column 3 (char 85)
+2025-07-16 16:42:45,421 - INFO - 127.0.0.1 - - [16/Jul/2025 16:42:45] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-07-16 16:42:48,343 - INFO - Prediction made: Overall=53.1, Potential=68.5
+2025-07-16 16:42:48,343 - INFO - 127.0.0.1 - - [16/Jul/2025 16:42:48] "POST /predict HTTP/1.1" 200 -
+2025-07-16 16:42:53,023 - INFO - Prediction made: Overall=54.7, Potential=70.6
+2025-07-16 16:42:53,025 - INFO - 127.0.0.1 - - [16/Jul/2025 16:42:53] "POST /predict HTTP/1.1" 200 -
+2025-07-16 16:42:54,409 - INFO - Prediction made: Overall=54.7, Potential=70.6
+2025-07-16 16:42:54,411 - INFO - 127.0.0.1 - - [16/Jul/2025 16:42:54] "POST /predict HTTP/1.1" 200 -
+2025-07-16 16:44:10,838 - INFO -  * Detected change in 'E:\\Semester 6\\Data Science\\football-rating-predict\\python\\tes.py', reloading
+2025-07-16 16:44:11,149 - INFO -  * Restarting with stat
+2025-07-16 16:44:12,352 - INFO - Initializing Football Rating Prediction API
+2025-07-16 16:44:14,778 - INFO - Models loaded successfully
+2025-07-16 16:44:14,778 - INFO - Features available: 22
+2025-07-16 16:44:14,778 - INFO - Categorical encoders: ['positions', 'preferred_foot', 'body_type']
+2025-07-16 16:44:14,779 - INFO - API initialized successfully
+2025-07-16 16:44:14,779 - INFO - Starting Football Rating Prediction API server...
+2025-07-16 16:44:14,791 - WARNING -  * Debugger is active!
+2025-07-16 16:44:14,802 - INFO -  * Debugger PIN: 102-047-799
+2025-07-16 16:44:15,087 - INFO - Prediction made: Overall=54.7, Potential=70.6
+2025-07-16 16:44:15,088 - INFO - 127.0.0.1 - - [16/Jul/2025 16:44:15] "POST /predict HTTP/1.1" 200 -
+2025-07-16 16:44:34,052 - INFO -  * Detected change in 'E:\\Semester 6\\Data Science\\football-rating-predict\\python\\tes.py', reloading
+2025-07-16 16:44:34,354 - INFO -  * Restarting with stat
+2025-07-16 16:44:35,476 - INFO - Initializing Football Rating Prediction API
+2025-07-16 16:44:37,945 - INFO - Models loaded successfully
+2025-07-16 16:44:37,945 - INFO - Features available: 22
+2025-07-16 16:44:37,946 - INFO - Categorical encoders: ['positions', 'preferred_foot', 'body_type']
+2025-07-16 16:44:37,946 - INFO - API initialized successfully
+2025-07-16 16:44:37,946 - INFO - Starting Football Rating Prediction API server...
+2025-07-16 16:44:37,957 - WARNING -  * Debugger is active!
+2025-07-16 16:44:37,966 - INFO -  * Debugger PIN: 102-047-799
+2025-07-16 16:44:38,262 - INFO - Prediction made: Overall=54.7, Potential=70.6
+2025-07-16 16:44:38,264 - INFO - 127.0.0.1 - - [16/Jul/2025 16:44:38] "POST /predict HTTP/1.1" 200 -
+2025-07-16 16:45:02,845 - INFO -  * Detected change in 'E:\\Semester 6\\Data Science\\football-rating-predict\\python\\tes.py', reloading
+2025-07-16 16:45:03,172 - INFO -  * Restarting with stat
+2025-07-16 16:45:04,296 - INFO - Initializing Football Rating Prediction API
+2025-07-16 16:45:06,679 - INFO - Models loaded successfully
+2025-07-16 16:45:06,679 - INFO - Features available: 22
+2025-07-16 16:45:06,680 - INFO - Categorical encoders: ['positions', 'preferred_foot', 'body_type']
+2025-07-16 16:45:06,680 - INFO - API initialized successfully
+2025-07-16 16:45:06,680 - INFO - Starting Football Rating Prediction API server...
+2025-07-16 16:45:06,690 - WARNING -  * Debugger is active!
+2025-07-16 16:45:06,699 - INFO -  * Debugger PIN: 102-047-799
+2025-07-16 16:45:06,983 - INFO - Prediction made: Overall=54.7, Potential=70.6
+2025-07-16 16:45:06,987 - INFO - 127.0.0.1 - - [16/Jul/2025 16:45:06] "POST /predict HTTP/1.1" 200 -
+2025-07-16 16:45:26,835 - INFO -  * Detected change in 'E:\\Semester 6\\Data Science\\football-rating-predict\\python\\tes.py', reloading
+2025-07-16 16:45:27,133 - INFO -  * Restarting with stat
+2025-07-16 16:45:28,260 - INFO - Initializing Football Rating Prediction API
+2025-07-16 16:45:30,583 - INFO - Models loaded successfully
+2025-07-16 16:45:30,584 - INFO - Features available: 22
+2025-07-16 16:45:30,584 - INFO - Categorical encoders: ['positions', 'preferred_foot', 'body_type']
+2025-07-16 16:45:30,584 - INFO - API initialized successfully
+2025-07-16 16:45:30,584 - INFO - Starting Football Rating Prediction API server...
+2025-07-16 16:45:30,594 - WARNING -  * Debugger is active!
+2025-07-16 16:45:30,604 - INFO -  * Debugger PIN: 102-047-799
+2025-07-16 16:45:31,537 - INFO - Prediction made: Overall=54.7, Potential=70.6
+2025-07-16 16:45:31,538 - INFO - 127.0.0.1 - - [16/Jul/2025 16:45:31] "POST /predict HTTP/1.1" 200 -
+2025-07-16 16:45:37,519 - INFO - Prediction made: Overall=54.7, Potential=70.6
+2025-07-16 16:45:37,521 - INFO - 127.0.0.1 - - [16/Jul/2025 16:45:37] "POST /predict HTTP/1.1" 200 -
+2025-07-16 16:45:39,766 - INFO - Prediction made: Overall=54.7, Potential=70.6
+2025-07-16 16:45:39,768 - INFO - 127.0.0.1 - - [16/Jul/2025 16:45:39] "POST /predict HTTP/1.1" 200 -
+2025-07-16 16:47:20,030 - INFO - Prediction made: Overall=54.7, Potential=70.6
+2025-07-16 16:47:20,031 - INFO - 127.0.0.1 - - [16/Jul/2025 16:47:20] "POST /predict HTTP/1.1" 200 -
+2025-07-16 16:47:37,293 - INFO - Prediction made: Overall=54.7, Potential=70.6
+2025-07-16 16:47:37,295 - INFO - 127.0.0.1 - - [16/Jul/2025 16:47:37] "POST /predict HTTP/1.1" 200 -
+2025-07-16 16:47:39,638 - INFO - Prediction made: Overall=54.7, Potential=70.6
+2025-07-16 16:47:39,640 - INFO - 127.0.0.1 - - [16/Jul/2025 16:47:39] "POST /predict HTTP/1.1" 200 -
+2025-07-16 16:47:44,978 - INFO - Prediction made: Overall=54.7, Potential=70.6
+2025-07-16 16:47:44,980 - INFO - 127.0.0.1 - - [16/Jul/2025 16:47:44] "POST /predict HTTP/1.1" 200 -
+2025-07-16 16:47:55,590 - INFO - Prediction made: Overall=54.7, Potential=70.6
+2025-07-16 16:47:55,591 - INFO - 127.0.0.1 - - [16/Jul/2025 16:47:55] "POST /predict HTTP/1.1" 200 -
+2025-07-16 16:47:58,885 - INFO - Prediction made: Overall=54.7, Potential=70.6
+2025-07-16 16:47:58,886 - INFO - 127.0.0.1 - - [16/Jul/2025 16:47:58] "POST /predict HTTP/1.1" 200 -
+2025-07-16 16:48:02,211 - INFO - Prediction made: Overall=54.7, Potential=70.6
+2025-07-16 16:48:02,213 - INFO - 127.0.0.1 - - [16/Jul/2025 16:48:02] "POST /predict HTTP/1.1" 200 -
+2025-07-16 16:48:14,179 - INFO - Prediction made: Overall=54.5, Potential=69.8
+2025-07-16 16:48:14,180 - INFO - 127.0.0.1 - - [16/Jul/2025 16:48:14] "POST /predict HTTP/1.1" 200 -
+2025-07-16 16:48:20,402 - INFO - Prediction made: Overall=54.5, Potential=69.8
+2025-07-16 16:48:20,403 - INFO - 127.0.0.1 - - [16/Jul/2025 16:48:20] "POST /predict HTTP/1.1" 200 -
+2025-07-16 16:48:31,072 - INFO - Prediction made: Overall=54.5, Potential=69.8
+2025-07-16 16:48:31,073 - INFO - 127.0.0.1 - - [16/Jul/2025 16:48:31] "POST /predict HTTP/1.1" 200 -
+2025-07-16 16:48:33,934 - INFO - Prediction made: Overall=54.5, Potential=69.8
+2025-07-16 16:48:33,936 - INFO - 127.0.0.1 - - [16/Jul/2025 16:48:33] "POST /predict HTTP/1.1" 200 -
+2025-07-16 16:48:52,860 - INFO - Prediction made: Overall=54.5, Potential=69.8
+2025-07-16 16:48:52,861 - INFO - 127.0.0.1 - - [16/Jul/2025 16:48:52] "POST /predict HTTP/1.1" 200 -
+2025-07-16 16:49:02,750 - INFO - Prediction made: Overall=54.5, Potential=69.8
+2025-07-16 16:49:02,752 - INFO - 127.0.0.1 - - [16/Jul/2025 16:49:02] "POST /predict HTTP/1.1" 200 -
+2025-07-16 16:49:06,010 - INFO - Prediction made: Overall=54.7, Potential=69.9
+2025-07-16 16:49:06,010 - INFO - 127.0.0.1 - - [16/Jul/2025 16:49:06] "POST /predict HTTP/1.1" 200 -
+2025-07-16 16:49:09,872 - INFO - Prediction made: Overall=54.5, Potential=69.8
+2025-07-16 16:49:09,873 - INFO - 127.0.0.1 - - [16/Jul/2025 16:49:09] "POST /predict HTTP/1.1" 200 -
+2025-07-16 16:52:56,676 - INFO -  * Detected change in 'E:\\Semester 6\\Data Science\\football-rating-predict\\python\\tes.py', reloading
+2025-07-16 16:52:57,019 - INFO -  * Restarting with stat
+2025-07-16 16:52:58,301 - INFO - Initializing Football Rating Prediction API
+2025-07-16 16:53:00,806 - INFO - Models loaded successfully
+2025-07-16 16:53:00,806 - INFO - Features available: 22
+2025-07-16 16:53:00,806 - INFO - Categorical encoders: ['positions', 'preferred_foot', 'body_type']
+2025-07-16 16:53:00,806 - INFO - API initialized successfully
+2025-07-16 16:53:00,807 - INFO - Starting Football Rating Prediction API server...
+2025-07-16 16:53:00,816 - WARNING -  * Debugger is active!
+2025-07-16 16:53:00,825 - INFO -  * Debugger PIN: 102-047-799
+2025-07-16 16:53:01,689 - INFO - 127.0.0.1 - - [16/Jul/2025 16:53:01] "POST /debug_scaling HTTP/1.1" 200 -
+2025-07-16 16:54:19,997 - INFO -  * Detected change in 'E:\\Semester 6\\Data Science\\football-rating-predict\\python\\tes.py', reloading
+2025-07-16 16:54:20,293 - INFO -  * Restarting with stat
+2025-07-16 16:54:21,433 - INFO - Initializing Football Rating Prediction API
+2025-07-16 16:54:23,930 - INFO - Models loaded successfully
+2025-07-16 16:54:23,930 - INFO - Features available: 22
+2025-07-16 16:54:23,930 - INFO - Categorical encoders: ['positions', 'preferred_foot', 'body_type']
+2025-07-16 16:54:23,931 - INFO - API initialized successfully
+2025-07-16 16:54:23,931 - INFO - Starting Football Rating Prediction API server...
+2025-07-16 16:54:23,941 - WARNING -  * Debugger is active!
+2025-07-16 16:54:23,955 - INFO -  * Debugger PIN: 102-047-799
+2025-07-16 16:54:45,917 - INFO - 127.0.0.1 - - [16/Jul/2025 16:54:45] "POST /debug_scaling HTTP/1.1" 200 -
+2025-07-16 16:55:05,828 - INFO - 127.0.0.1 - - [16/Jul/2025 16:55:05] "[33mPOST /debug_encoder HTTP/1.1[0m" 404 -
+2025-07-16 16:55:12,389 - INFO - 127.0.0.1 - - [16/Jul/2025 16:55:12] "[33mGET /debug_encoder HTTP/1.1[0m" 404 -
+2025-07-16 16:55:21,716 - INFO - 127.0.0.1 - - [16/Jul/2025 16:55:21] "GET /debug_encoders HTTP/1.1" 200 -
+2025-07-16 16:57:43,435 - INFO -  * Detected change in 'E:\\Semester 6\\Data Science\\football-rating-predict\\python\\tes.py', reloading
+2025-07-16 16:57:43,762 - INFO -  * Restarting with stat
+2025-07-16 16:57:44,876 - INFO - Initializing Football Rating Prediction API
+2025-07-16 16:57:47,349 - INFO - Models loaded successfully
+2025-07-16 16:57:47,349 - INFO - Features available: 22
+2025-07-16 16:57:47,350 - INFO - Categorical encoders: ['positions', 'preferred_foot', 'body_type']
+2025-07-16 16:57:47,350 - INFO - API initialized successfully
+2025-07-16 16:57:47,350 - INFO - Starting Football Rating Prediction API server...
+2025-07-16 16:57:47,359 - WARNING -  * Debugger is active!
+2025-07-16 16:57:47,369 - INFO -  * Debugger PIN: 102-047-799
+2025-07-16 16:58:02,315 - INFO - 127.0.0.1 - - [16/Jul/2025 16:58:02] "[31m[1mGET /predict HTTP/1.1[0m" 405 -
+2025-07-16 16:58:05,458 - ERROR - Error in predict endpoint: name 'predict_player_rating' is not defined
+2025-07-16 16:58:05,459 - INFO - 127.0.0.1 - - [16/Jul/2025 16:58:05] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-07-16 16:58:33,666 - INFO -  * Detected change in 'E:\\Semester 6\\Data Science\\football-rating-predict\\python\\tes.py', reloading
+2025-07-16 16:58:34,002 - INFO -  * Restarting with stat
+2025-07-16 16:58:35,136 - INFO - Initializing Football Rating Prediction API
+2025-07-16 16:58:37,429 - INFO - Models loaded successfully
+2025-07-16 16:58:37,429 - INFO - Features available: 22
+2025-07-16 16:58:37,429 - INFO - Categorical encoders: ['positions', 'preferred_foot', 'body_type']
+2025-07-16 16:58:37,430 - INFO - API initialized successfully
+2025-07-16 16:58:37,430 - INFO - Starting Football Rating Prediction API server...
+2025-07-16 16:58:37,440 - WARNING -  * Debugger is active!
+2025-07-16 16:58:37,450 - INFO -  * Debugger PIN: 102-047-799
+2025-07-16 16:58:45,155 - ERROR - Error in fixed prediction: name 'create_feature_vector_fixed' is not defined
+2025-07-16 16:58:45,160 - ERROR - Traceback (most recent call last):
+  File "E:\Semester 6\Data Science\football-rating-predict\python\tes.py", line 299, in predict_player_rating
+    feature_vector, features_provided, total_features = create_feature_vector_fixed(input_data)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+NameError: name 'create_feature_vector_fixed' is not defined. Did you mean: 'create_feature_vector'?
+
+2025-07-16 16:58:45,162 - ERROR - Error in predict endpoint: name 'create_feature_vector_fixed' is not defined
+2025-07-16 16:58:45,164 - INFO - 127.0.0.1 - - [16/Jul/2025 16:58:45] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+2025-07-16 16:58:47,015 - INFO -  * Detected change in 'E:\\Semester 6\\Data Science\\football-rating-predict\\python\\tes.py', reloading
+2025-07-16 16:58:47,349 - INFO -  * Restarting with stat
+2025-07-16 16:58:48,469 - INFO - Initializing Football Rating Prediction API
+2025-07-16 16:58:50,801 - INFO - Models loaded successfully
+2025-07-16 16:58:50,802 - INFO - Features available: 22
+2025-07-16 16:58:50,802 - INFO - Categorical encoders: ['positions', 'preferred_foot', 'body_type']
+2025-07-16 16:58:50,802 - INFO - API initialized successfully
+2025-07-16 16:58:50,802 - INFO - Starting Football Rating Prediction API server...
+2025-07-16 16:58:50,812 - WARNING -  * Debugger is active!
+2025-07-16 16:58:50,821 - INFO -  * Debugger PIN: 102-047-799
+2025-07-16 16:58:50,995 - INFO - Mapped single position ST to 869
+2025-07-16 16:58:50,995 - INFO - Features provided: 22/22
+2025-07-16 16:58:51,107 - INFO - Fixed prediction: Overall=54.7, Potential=70.6
+2025-07-16 16:58:51,109 - INFO - 127.0.0.1 - - [16/Jul/2025 16:58:51] "POST /predict HTTP/1.1" 200 -
+2025-07-16 17:00:07,093 - INFO - 127.0.0.1 - - [16/Jul/2025 17:00:07] "[33mPOST /debug-scaling HTTP/1.1[0m" 404 -
+2025-07-16 17:00:22,946 - INFO - Mapped single position ST to 869
+2025-07-16 17:00:22,947 - INFO - Features provided: 22/22
+2025-07-16 17:00:22,948 - INFO - 127.0.0.1 - - [16/Jul/2025 17:00:22] "POST /debug_scaling HTTP/1.1" 200 -
+2025-07-16 17:02:16,854 - INFO -  * Detected change in 'E:\\Semester 6\\Data Science\\football-rating-predict\\python\\tes.py', reloading
+2025-07-16 17:02:17,147 - INFO -  * Restarting with stat
+2025-07-16 17:02:18,237 - INFO - Initializing Football Rating Prediction API
+2025-07-16 17:02:20,530 - INFO - Models loaded successfully
+2025-07-16 17:02:20,530 - INFO - Features available: 22
+2025-07-16 17:02:20,530 - INFO - Categorical encoders: ['positions', 'preferred_foot', 'body_type']
+2025-07-16 17:02:20,531 - INFO - API initialized successfully
+2025-07-16 17:02:20,531 - INFO - Starting Football Rating Prediction API server...
+2025-07-16 17:02:20,540 - WARNING -  * Debugger is active!
+2025-07-16 17:02:20,550 - INFO -  * Debugger PIN: 102-047-799
+2025-07-16 17:02:40,406 - INFO -  * Detected change in 'E:\\Semester 6\\Data Science\\football-rating-predict\\python\\tes.py', reloading
+2025-07-16 17:02:40,704 - INFO -  * Restarting with stat
+2025-07-16 17:02:41,804 - INFO - Initializing Football Rating Prediction API
+2025-07-16 17:02:44,316 - INFO - Models loaded successfully
+2025-07-16 17:02:44,316 - INFO - Features available: 22
+2025-07-16 17:02:44,317 - INFO - Categorical encoders: ['positions', 'preferred_foot', 'body_type']
+2025-07-16 17:02:44,319 - INFO - API initialized successfully
+2025-07-16 17:02:44,320 - INFO - Starting Football Rating Prediction API server...
+2025-07-16 17:02:44,332 - WARNING -  * Debugger is active!
+2025-07-16 17:02:44,341 - INFO -  * Debugger PIN: 102-047-799
+2025-07-16 17:02:44,510 - INFO - Set age = 25.0
+2025-07-16 17:02:44,511 - INFO - Set height_cm = 185.0
+2025-07-16 17:02:44,511 - INFO - Set weight_kgs = 80.0
+2025-07-16 17:02:44,512 - INFO - Set international_reputation(1-5) = 4.0
+2025-07-16 17:02:44,512 - INFO - Set weak_foot(1-5) = 4.0
+2025-07-16 17:02:44,512 - INFO - Set skill_moves(1-5) = 4.0
+2025-07-16 17:02:44,512 - INFO - Set heading_accuracy = 85.0
+2025-07-16 17:02:44,513 - INFO - Set dribbling = 90.0
+2025-07-16 17:02:44,513 - INFO - Set curve = 80.0
+2025-07-16 17:02:44,513 - INFO - Set ball_control = 92.0
+2025-07-16 17:02:44,514 - INFO - Set reactions = 88.0
+2025-07-16 17:02:44,514 - INFO - Set aggression = 70.0
+2025-07-16 17:02:44,514 - INFO - Set positioning = 95.0
+2025-07-16 17:02:44,515 - INFO - Set composure = 90.0
+2025-07-16 17:02:44,515 - INFO - Set pace_composite = 85.0
+2025-07-16 17:02:44,515 - INFO - Set shooting_composite = 95.0
+2025-07-16 17:02:44,515 - INFO - Set passing_composite = 80.0
+2025-07-16 17:02:44,515 - INFO - Set defending_composite = 40.0
+2025-07-16 17:02:44,516 - INFO - Set physical_composite = 85.0
+2025-07-16 17:02:44,516 - INFO - Mapped single position ST to 869
+2025-07-16 17:02:44,517 - INFO - Features provided: 22/22
+2025-07-16 17:02:44,517 - INFO - Feature vector range: 0.0 - 869.0
+2025-07-16 17:02:44,522 - INFO - 127.0.0.1 - - [16/Jul/2025 17:02:44] "POST /debug_scaling HTTP/1.1" 200 -
+2025-07-16 17:02:57,178 - INFO - Set age = 25.0
+2025-07-16 17:02:57,179 - INFO - Set height_cm = 185.0
+2025-07-16 17:02:57,179 - INFO - Set weight_kgs = 80.0
+2025-07-16 17:02:57,180 - INFO - Set international_reputation(1-5) = 4.0
+2025-07-16 17:02:57,180 - INFO - Set weak_foot(1-5) = 4.0
+2025-07-16 17:02:57,180 - INFO - Set skill_moves(1-5) = 4.0
+2025-07-16 17:02:57,181 - INFO - Set heading_accuracy = 85.0
+2025-07-16 17:02:57,181 - INFO - Set dribbling = 90.0
+2025-07-16 17:02:57,182 - INFO - Set curve = 80.0
+2025-07-16 17:02:57,182 - INFO - Set ball_control = 92.0
+2025-07-16 17:02:57,182 - INFO - Set reactions = 88.0
+2025-07-16 17:02:57,182 - INFO - Set aggression = 70.0
+2025-07-16 17:02:57,183 - INFO - Set positioning = 95.0
+2025-07-16 17:02:57,183 - INFO - Set composure = 90.0
+2025-07-16 17:02:57,183 - INFO - Set pace_composite = 85.0
+2025-07-16 17:02:57,184 - INFO - Set shooting_composite = 95.0
+2025-07-16 17:02:57,184 - INFO - Set passing_composite = 80.0
+2025-07-16 17:02:57,184 - INFO - Set defending_composite = 40.0
+2025-07-16 17:02:57,185 - INFO - Set physical_composite = 85.0
+2025-07-16 17:02:57,185 - INFO - Mapped single position ST to 869
+2025-07-16 17:02:57,186 - INFO - Features provided: 22/22
+2025-07-16 17:02:57,186 - INFO - Feature vector range: 0.0 - 869.0
+2025-07-16 17:02:57,324 - INFO - Fixed prediction: Overall=54.7, Potential=70.6
+2025-07-16 17:02:57,326 - INFO - 127.0.0.1 - - [16/Jul/2025 17:02:57] "POST /predict HTTP/1.1" 200 -
+2025-07-16 17:03:00,533 - INFO - Set age = 25.0
+2025-07-16 17:03:00,534 - INFO - Set height_cm = 185.0
+2025-07-16 17:03:00,534 - INFO - Set weight_kgs = 80.0
+2025-07-16 17:03:00,534 - INFO - Set international_reputation(1-5) = 4.0
+2025-07-16 17:03:00,535 - INFO - Set weak_foot(1-5) = 4.0
+2025-07-16 17:03:00,535 - INFO - Set skill_moves(1-5) = 4.0
+2025-07-16 17:03:00,535 - INFO - Set heading_accuracy = 85.0
+2025-07-16 17:03:00,536 - INFO - Set dribbling = 90.0
+2025-07-16 17:03:00,536 - INFO - Set curve = 80.0
+2025-07-16 17:03:00,536 - INFO - Set ball_control = 92.0
+2025-07-16 17:03:00,537 - INFO - Set reactions = 88.0
+2025-07-16 17:03:00,537 - INFO - Set aggression = 70.0
+2025-07-16 17:03:00,537 - INFO - Set positioning = 95.0
+2025-07-16 17:03:00,538 - INFO - Set composure = 90.0
+2025-07-16 17:03:00,538 - INFO - Set pace_composite = 85.0
+2025-07-16 17:03:00,538 - INFO - Set shooting_composite = 95.0
+2025-07-16 17:03:00,538 - INFO - Set passing_composite = 80.0
+2025-07-16 17:03:00,539 - INFO - Set defending_composite = 40.0
+2025-07-16 17:03:00,539 - INFO - Set physical_composite = 85.0
+2025-07-16 17:03:00,539 - INFO - Mapped single position ST to 869
+2025-07-16 17:03:00,540 - INFO - Features provided: 22/22
+2025-07-16 17:03:00,540 - INFO - Feature vector range: 0.0 - 869.0
+2025-07-16 17:03:00,542 - INFO - 127.0.0.1 - - [16/Jul/2025 17:03:00] "POST /debug_scaling HTTP/1.1" 200 -
+2025-07-16 17:03:47,548 - INFO - Set age = 25.0
+2025-07-16 17:03:47,548 - INFO - Set height_cm = 185.0
+2025-07-16 17:03:47,549 - INFO - Set weight_kgs = 80.0
+2025-07-16 17:03:47,549 - INFO - Set international_reputation(1-5) = 4.0
+2025-07-16 17:03:47,550 - INFO - Set weak_foot(1-5) = 4.0
+2025-07-16 17:03:47,550 - INFO - Set skill_moves(1-5) = 4.0
+2025-07-16 17:03:47,550 - INFO - Set heading_accuracy = 85.0
+2025-07-16 17:03:47,550 - INFO - Set dribbling = 90.0
+2025-07-16 17:03:47,551 - INFO - Set curve = 80.0
+2025-07-16 17:03:47,551 - INFO - Set ball_control = 92.0
+2025-07-16 17:03:47,551 - INFO - Set reactions = 88.0
+2025-07-16 17:03:47,552 - INFO - Set aggression = 70.0
+2025-07-16 17:03:47,552 - INFO - Set positioning = 95.0
+2025-07-16 17:03:47,552 - INFO - Set composure = 90.0
+2025-07-16 17:03:47,552 - INFO - Set pace_composite = 85.0
+2025-07-16 17:03:47,553 - INFO - Set shooting_composite = 95.0
+2025-07-16 17:03:47,553 - INFO - Set passing_composite = 80.0
+2025-07-16 17:03:47,553 - INFO - Set defending_composite = 40.0
+2025-07-16 17:03:47,553 - INFO - Set physical_composite = 85.0
+2025-07-16 17:03:47,554 - INFO - Mapped single position ST to 869
+2025-07-16 17:03:47,555 - INFO - Features provided: 22/22
+2025-07-16 17:03:47,555 - INFO - Feature vector range: 0.0 - 869.0
+2025-07-16 17:03:47,713 - INFO - Fixed prediction: Overall=54.7, Potential=70.6
+2025-07-16 17:03:47,715 - INFO - 127.0.0.1 - - [16/Jul/2025 17:03:47] "POST /predict HTTP/1.1" 200 -
+2025-07-16 17:04:50,138 - INFO - Set age = 25.0
+2025-07-16 17:04:50,139 - INFO - Set height_cm = 185.0
+2025-07-16 17:04:50,139 - INFO - Set weight_kgs = 80.0
+2025-07-16 17:04:50,139 - INFO - Set international_reputation(1-5) = 2.0
+2025-07-16 17:04:50,140 - INFO - Set weak_foot(1-5) = 4.0
+2025-07-16 17:04:50,140 - INFO - Set skill_moves(1-5) = 4.0
+2025-07-16 17:04:50,140 - INFO - Set heading_accuracy = 85.0
+2025-07-16 17:04:50,141 - INFO - Set dribbling = 90.0
+2025-07-16 17:04:50,141 - INFO - Set curve = 80.0
+2025-07-16 17:04:50,141 - INFO - Set ball_control = 92.0
+2025-07-16 17:04:50,141 - INFO - Set reactions = 88.0
+2025-07-16 17:04:50,143 - INFO - Set aggression = 70.0
+2025-07-16 17:04:50,143 - INFO - Set positioning = 95.0
+2025-07-16 17:04:50,143 - INFO - Set composure = 90.0
+2025-07-16 17:04:50,144 - INFO - Set pace_composite = 85.0
+2025-07-16 17:04:50,144 - INFO - Set shooting_composite = 95.0
+2025-07-16 17:04:50,144 - INFO - Set passing_composite = 80.0
+2025-07-16 17:04:50,145 - INFO - Set defending_composite = 40.0
+2025-07-16 17:04:50,145 - INFO - Set physical_composite = 85.0
+2025-07-16 17:04:50,145 - INFO - Mapped single position ST to 869
+2025-07-16 17:04:50,146 - INFO - Features provided: 22/22
+2025-07-16 17:04:50,146 - INFO - Feature vector range: 0.0 - 869.0
+2025-07-16 17:04:50,289 - INFO - Fixed prediction: Overall=54.4, Potential=70.4
+2025-07-16 17:04:50,291 - INFO - 127.0.0.1 - - [16/Jul/2025 17:04:50] "POST /predict HTTP/1.1" 200 -
+2025-07-16 17:06:34,528 - INFO -  * Detected change in 'E:\\Semester 6\\Data Science\\football-rating-predict\\python\\tes.py', reloading
+2025-07-16 17:06:34,809 - INFO -  * Restarting with stat
+2025-07-16 17:06:35,911 - INFO - Initializing Football Rating Prediction API
+2025-07-16 17:06:38,299 - INFO - Models loaded successfully
+2025-07-16 17:06:38,308 - INFO - Features available: 22
+2025-07-16 17:06:38,309 - INFO - Categorical encoders: ['positions', 'preferred_foot', 'body_type']
+2025-07-16 17:06:38,309 - INFO - API initialized successfully
+2025-07-16 17:06:38,310 - INFO - Starting Football Rating Prediction API server...
+2025-07-16 17:06:38,326 - WARNING -  * Debugger is active!
+2025-07-16 17:06:38,340 - INFO -  * Debugger PIN: 102-047-799
+2025-07-16 17:07:03,282 - INFO - 127.0.0.1 - - [16/Jul/2025 17:07:03] "GET /test_model_range HTTP/1.1" 200 -
+2025-07-16 17:23:50,144 - INFO - 🚀 Starting Football Rating Prediction API with Accuracy...
+2025-07-16 17:23:50,144 - INFO - 📁 Found models in python subfolder
+2025-07-16 17:23:50,144 - WARNING - ⚠️ Missing model files: ['random_forest_overall_model.pkl', 'random_forest_potential_model.pkl']
+2025-07-16 17:23:50,145 - INFO - 📁 Current directory: E:\Semester 6\Data Science\football-rating-predict
+2025-07-16 17:23:50,145 - INFO - 📋 Files in current directory:
+2025-07-16 17:23:50,145 - INFO - 🤖 Creating dummy models for testing purposes...
+2025-07-16 17:23:51,474 - INFO - 🤖 Dummy models created for testing purposes
+2025-07-16 17:23:51,475 - INFO - ✅ API initialized successfully with accuracy calculation
+2025-07-16 17:23:51,475 - INFO - 🌐 Starting Flask server on http://localhost:5000
+2025-07-16 17:23:51,493 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.5:5000
+2025-07-16 17:23:51,493 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-16 17:23:59,522 - INFO - 127.0.0.1 - - [16/Jul/2025 17:23:59] "[31m[1mPOST /predict HTTP/1.1[0m" 400 -
+2025-07-16 17:24:01,004 - INFO - 127.0.0.1 - - [16/Jul/2025 17:24:01] "[31m[1mPOST /predict HTTP/1.1[0m" 400 -
+2025-07-16 18:10:20,210 - INFO - Initializing Football Rating Prediction API
+2025-07-16 18:10:22,636 - INFO - Models loaded successfully
+2025-07-16 18:10:22,636 - INFO - Features available: 22
+2025-07-16 18:10:22,637 - INFO - Categorical encoders: ['positions', 'preferred_foot', 'body_type']
+2025-07-16 18:10:22,637 - INFO - API initialized successfully
+2025-07-16 18:10:22,637 - INFO - Starting Football Rating Prediction API server...
+2025-07-16 18:10:22,667 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.5:5000
+2025-07-16 18:10:22,668 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-16 18:10:22,670 - INFO -  * Restarting with stat
+2025-07-16 18:10:23,754 - INFO - Initializing Football Rating Prediction API
+2025-07-16 18:10:26,128 - INFO - Models loaded successfully
+2025-07-16 18:10:26,129 - INFO - Features available: 22
+2025-07-16 18:10:26,129 - INFO - Categorical encoders: ['positions', 'preferred_foot', 'body_type']
+2025-07-16 18:10:26,129 - INFO - API initialized successfully
+2025-07-16 18:10:26,130 - INFO - Starting Football Rating Prediction API server...
+2025-07-16 18:10:26,145 - WARNING -  * Debugger is active!
+2025-07-16 18:10:26,206 - INFO -  * Debugger PIN: 102-047-799
+2025-07-16 18:10:27,768 - INFO - Set age = 25.0
+2025-07-16 18:10:27,769 - INFO - Set height_cm = 185.0
+2025-07-16 18:10:27,769 - INFO - Set weight_kgs = 80.0
+2025-07-16 18:10:27,770 - INFO - Set international_reputation(1-5) = 4.0
+2025-07-16 18:10:27,770 - INFO - Set weak_foot(1-5) = 4.0
+2025-07-16 18:10:27,770 - INFO - Set skill_moves(1-5) = 4.0
+2025-07-16 18:10:27,771 - INFO - Set heading_accuracy = 85.0
+2025-07-16 18:10:27,771 - INFO - Set dribbling = 90.0
+2025-07-16 18:10:27,772 - INFO - Set curve = 80.0
+2025-07-16 18:10:27,772 - INFO - Set ball_control = 92.0
+2025-07-16 18:10:27,772 - INFO - Set reactions = 88.0
+2025-07-16 18:10:27,773 - INFO - Set aggression = 70.0
+2025-07-16 18:10:27,773 - INFO - Set positioning = 95.0
+2025-07-16 18:10:27,773 - INFO - Set composure = 90.0
+2025-07-16 18:10:27,773 - INFO - Set pace_composite = 85.0
+2025-07-16 18:10:27,774 - INFO - Set shooting_composite = 95.0
+2025-07-16 18:10:27,774 - INFO - Set passing_composite = 80.0
+2025-07-16 18:10:27,774 - INFO - Set defending_composite = 40.0
+2025-07-16 18:10:27,775 - INFO - Set physical_composite = 85.0
+2025-07-16 18:10:27,775 - INFO - Features provided: 19/22
+2025-07-16 18:10:27,776 - INFO - Feature vector range: 0.0 - 869.0
+2025-07-16 18:10:27,900 - INFO - Fixed prediction: Overall=55.4, Potential=70.9
+2025-07-16 18:10:27,902 - INFO - 127.0.0.1 - - [16/Jul/2025 18:10:27] "POST /predict HTTP/1.1" 200 -
+2025-07-16 18:12:58,497 - INFO -  * Detected change in 'E:\\Semester 6\\Data Science\\football-rating-predict\\python\\tes.py', reloading
+2025-07-16 18:12:58,876 - INFO -  * Restarting with stat
+2025-07-16 18:13:00,064 - INFO - Initializing Football Rating Prediction API
+2025-07-16 18:13:02,113 - INFO - Models loaded successfully
+2025-07-16 18:13:02,113 - INFO - Features available: 22
+2025-07-16 18:13:02,114 - INFO - Categorical encoders: ['positions', 'preferred_foot', 'body_type']
+2025-07-16 18:13:02,114 - INFO - API initialized successfully
+2025-07-16 18:13:02,114 - INFO - Starting Football Rating Prediction API server...
+2025-07-16 18:13:02,124 - WARNING -  * Debugger is active!
+2025-07-16 18:13:02,134 - INFO -  * Debugger PIN: 102-047-799
+2025-07-16 18:13:04,843 - INFO - Set age = 25.0
+2025-07-16 18:13:04,844 - INFO - Set height_cm = 185.0
+2025-07-16 18:13:04,844 - INFO - Set weight_kgs = 80.0
+2025-07-16 18:13:04,844 - INFO - Set international_reputation(1-5) = 4.0
+2025-07-16 18:13:04,845 - INFO - Set weak_foot(1-5) = 4.0
+2025-07-16 18:13:04,845 - INFO - Set skill_moves(1-5) = 4.0
+2025-07-16 18:13:04,845 - INFO - Set heading_accuracy = 85.0
+2025-07-16 18:13:04,846 - INFO - Set dribbling = 90.0
+2025-07-16 18:13:04,846 - INFO - Set curve = 80.0
+2025-07-16 18:13:04,846 - INFO - Set ball_control = 92.0
+2025-07-16 18:13:04,846 - INFO - Set reactions = 88.0
+2025-07-16 18:13:04,848 - INFO - Set aggression = 70.0
+2025-07-16 18:13:04,848 - INFO - Set positioning = 95.0
+2025-07-16 18:13:04,849 - INFO - Set composure = 90.0
+2025-07-16 18:13:04,849 - INFO - Set pace_composite = 85.0
+2025-07-16 18:13:04,849 - INFO - Set shooting_composite = 95.0
+2025-07-16 18:13:04,850 - INFO - Set passing_composite = 80.0
+2025-07-16 18:13:04,850 - INFO - Set defending_composite = 40.0
+2025-07-16 18:13:04,850 - INFO - Set physical_composite = 85.0
+2025-07-16 18:13:04,850 - INFO - Features provided: 19/22
+2025-07-16 18:13:04,851 - INFO - Feature vector stats: min=0.0, max=185.0, mean=63.2
+2025-07-16 18:13:04,961 - INFO - Prediction: Overall=55.4, Potential=70.9
+2025-07-16 18:13:04,962 - INFO - Feature coverage: 86.4%
+2025-07-16 18:13:04,963 - INFO - 127.0.0.1 - - [16/Jul/2025 18:13:04] "POST /predict HTTP/1.1" 200 -
+2025-07-16 18:13:26,561 - INFO - Set age = 25.0
+2025-07-16 18:13:26,561 - INFO - Set height_cm = 185.0
+2025-07-16 18:13:26,561 - INFO - Set weight_kgs = 80.0
+2025-07-16 18:13:26,562 - INFO - Set international_reputation(1-5) = 4.0
+2025-07-16 18:13:26,562 - INFO - Set weak_foot(1-5) = 4.0
+2025-07-16 18:13:26,562 - INFO - Set skill_moves(1-5) = 4.0
+2025-07-16 18:13:26,562 - INFO - Set heading_accuracy = 85.0
+2025-07-16 18:13:26,562 - INFO - Set dribbling = 90.0
+2025-07-16 18:13:26,564 - INFO - Set curve = 80.0
+2025-07-16 18:13:26,564 - INFO - Set ball_control = 92.0
+2025-07-16 18:13:26,565 - INFO - Set reactions = 88.0
+2025-07-16 18:13:26,565 - INFO - Set aggression = 70.0
+2025-07-16 18:13:26,565 - INFO - Set positioning = 95.0
+2025-07-16 18:13:26,566 - INFO - Set composure = 90.0
+2025-07-16 18:13:26,566 - INFO - Set pace_composite = 85.0
+2025-07-16 18:13:26,566 - INFO - Set shooting_composite = 95.0
+2025-07-16 18:13:26,567 - INFO - Set passing_composite = 80.0
+2025-07-16 18:13:26,567 - INFO - Set defending_composite = 40.0
+2025-07-16 18:13:26,567 - INFO - Set physical_composite = 85.0
+2025-07-16 18:13:26,568 - INFO - Mapped position ST to 14
+2025-07-16 18:13:26,568 - INFO - Features provided: 22/22
+2025-07-16 18:13:26,569 - INFO - Feature vector stats: min=0.0, max=185.0, mean=63.3
+2025-07-16 18:13:26,713 - INFO - Prediction: Overall=55.4, Potential=70.5
+2025-07-16 18:13:26,713 - INFO - Feature coverage: 100.0%
+2025-07-16 18:13:26,715 - INFO - 127.0.0.1 - - [16/Jul/2025 18:13:26] "POST /predict HTTP/1.1" 200 -
+2025-07-16 18:13:46,377 - INFO - 127.0.0.1 - - [16/Jul/2025 18:13:46] "[33mPOST /diagnose%20 HTTP/1.1[0m" 404 -
+2025-07-16 18:13:49,311 - INFO - Set age = 25.0
+2025-07-16 18:13:49,311 - INFO - Set height_cm = 185.0
+2025-07-16 18:13:49,312 - INFO - Set weight_kgs = 80.0
+2025-07-16 18:13:49,312 - INFO - Set international_reputation(1-5) = 4.0
+2025-07-16 18:13:49,312 - INFO - Set weak_foot(1-5) = 4.0
+2025-07-16 18:13:49,312 - INFO - Set skill_moves(1-5) = 4.0
+2025-07-16 18:13:49,313 - INFO - Set heading_accuracy = 85.0
+2025-07-16 18:13:49,313 - INFO - Set dribbling = 90.0
+2025-07-16 18:13:49,313 - INFO - Set curve = 80.0
+2025-07-16 18:13:49,313 - INFO - Set ball_control = 92.0
+2025-07-16 18:13:49,314 - INFO - Set reactions = 88.0
+2025-07-16 18:13:49,314 - INFO - Set aggression = 70.0
+2025-07-16 18:13:49,314 - INFO - Set positioning = 95.0
+2025-07-16 18:13:49,314 - INFO - Set composure = 90.0
+2025-07-16 18:13:49,315 - INFO - Set pace_composite = 85.0
+2025-07-16 18:13:49,315 - INFO - Set shooting_composite = 95.0
+2025-07-16 18:13:49,315 - INFO - Set passing_composite = 80.0
+2025-07-16 18:13:49,316 - INFO - Set defending_composite = 40.0
+2025-07-16 18:13:49,316 - INFO - Set physical_composite = 85.0
+2025-07-16 18:13:49,316 - INFO - Mapped position ST to 14
+2025-07-16 18:13:49,317 - INFO - Features provided: 22/22
+2025-07-16 18:13:49,317 - INFO - Feature vector stats: min=0.0, max=185.0, mean=63.3
+2025-07-16 18:13:49,537 - INFO - 127.0.0.1 - - [16/Jul/2025 18:13:49] "POST /diagnose HTTP/1.1" 200 -
+2025-07-16 18:20:19,916 - INFO -  * Detected change in 'E:\\Semester 6\\Data Science\\football-rating-predict\\python\\tes2.py', reloading
+2025-07-16 19:38:06,201 - INFO - Initializing Football Rating Prediction API
+2025-07-16 19:38:08,180 - INFO - Models loaded successfully
+2025-07-16 19:38:08,181 - INFO - Features available: 22
+2025-07-16 19:38:08,181 - INFO - Categorical encoders: ['positions', 'preferred_foot', 'body_type']
+2025-07-16 19:38:08,181 - INFO - API initialized successfully
+2025-07-16 19:38:08,182 - INFO - Starting Football Rating Prediction API server...
+2025-07-16 19:38:08,208 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.5:5000
+2025-07-16 19:38:08,208 - INFO - [33mPress CTRL+C to quit[0m
+2025-07-16 19:38:08,210 - INFO -  * Restarting with stat
+2025-07-16 19:38:09,274 - INFO - Initializing Football Rating Prediction API
+2025-07-16 19:38:11,396 - INFO - Models loaded successfully
+2025-07-16 19:38:11,397 - INFO - Features available: 22
+2025-07-16 19:38:11,397 - INFO - Categorical encoders: ['positions', 'preferred_foot', 'body_type']
+2025-07-16 19:38:11,397 - INFO - API initialized successfully
+2025-07-16 19:38:11,397 - INFO - Starting Football Rating Prediction API server...
+2025-07-16 19:38:11,408 - WARNING -  * Debugger is active!
+2025-07-16 19:38:11,417 - INFO -  * Debugger PIN: 102-047-799
+2025-07-16 19:38:11,585 - INFO - Set age = 25.0
+2025-07-16 19:38:11,586 - INFO - Set height_cm = 185.0
+2025-07-16 19:38:11,586 - INFO - Set weight_kgs = 80.0
+2025-07-16 19:38:11,586 - INFO - Set international_reputation(1-5) = 4.0
+2025-07-16 19:38:11,586 - INFO - Set weak_foot(1-5) = 4.0
+2025-07-16 19:38:11,587 - INFO - Set skill_moves(1-5) = 4.0
+2025-07-16 19:38:11,587 - INFO - Set heading_accuracy = 85.0
+2025-07-16 19:38:11,587 - INFO - Set dribbling = 90.0
+2025-07-16 19:38:11,587 - INFO - Set curve = 80.0
+2025-07-16 19:38:11,588 - INFO - Set ball_control = 92.0
+2025-07-16 19:38:11,588 - INFO - Set reactions = 88.0
+2025-07-16 19:38:11,588 - INFO - Set aggression = 70.0
+2025-07-16 19:38:11,589 - INFO - Set positioning = 95.0
+2025-07-16 19:38:11,589 - INFO - Set composure = 90.0
+2025-07-16 19:38:11,589 - INFO - Set pace_composite = 85.0
+2025-07-16 19:38:11,589 - INFO - Set shooting_composite = 95.0
+2025-07-16 19:38:11,590 - INFO - Set passing_composite = 80.0
+2025-07-16 19:38:11,590 - INFO - Set defending_composite = 101.0
+2025-07-16 19:38:11,590 - INFO - Set physical_composite = 85.0
+2025-07-16 19:38:11,591 - INFO - Features provided: 20/22
+2025-07-16 19:38:11,591 - INFO - Feature vector stats: min=0.0, max=185.0, mean=66.0
+2025-07-16 19:38:11,694 - INFO - Prediction: Overall=55.4, Potential=70.9
+2025-07-16 19:38:11,694 - INFO - Feature coverage: 90.9%
+2025-07-16 19:38:11,696 - INFO - 127.0.0.1 - - [16/Jul/2025 19:38:11] "POST /predict HTTP/1.1" 200 -
+2025-07-16 19:42:33,274 - INFO -  * Detected change in 'E:\\Semester 6\\Data Science\\football-rating-predict\\python\\tes.py', reloading
+2025-07-16 19:42:33,574 - INFO -  * Restarting with stat
+2025-07-16 19:42:34,687 - INFO - Initializing Football Rating Prediction API
+2025-07-16 19:42:36,944 - INFO - Models loaded successfully
+2025-07-16 19:42:36,945 - INFO - Features available: 22
+2025-07-16 19:42:36,945 - INFO - Categorical encoders: ['positions', 'preferred_foot', 'body_type']
+2025-07-16 19:42:36,945 - INFO - API initialized successfully
+2025-07-16 19:42:36,945 - INFO - Starting Football Rating Prediction API server...
+2025-07-16 19:42:36,955 - WARNING -  * Debugger is active!
+2025-07-16 19:42:36,967 - INFO -  * Debugger PIN: 102-047-799
+2025-07-16 19:42:37,150 - INFO - Set age = 25.0
+2025-07-16 19:42:37,150 - INFO - Set height_cm = 185.0
+2025-07-16 19:42:37,150 - INFO - Set weight_kgs = 80.0
+2025-07-16 19:42:37,152 - INFO - Set international_reputation(1-5) = 4.0
+2025-07-16 19:42:37,152 - INFO - Set weak_foot(1-5) = 4.0
+2025-07-16 19:42:37,153 - INFO - Set skill_moves(1-5) = 4.0
+2025-07-16 19:42:37,153 - INFO - Set heading_accuracy = 85.0
+2025-07-16 19:42:37,153 - INFO - Set dribbling = 90.0
+2025-07-16 19:42:37,154 - INFO - Set curve = 80.0
+2025-07-16 19:42:37,154 - INFO - Set ball_control = 92.0
+2025-07-16 19:42:37,154 - INFO - Set reactions = 88.0
+2025-07-16 19:42:37,155 - INFO - Set aggression = 70.0
+2025-07-16 19:42:37,155 - INFO - Set positioning = 95.0
+2025-07-16 19:42:37,155 - INFO - Set composure = 90.0
+2025-07-16 19:42:37,155 - INFO - Set pace_composite = 85.0
+2025-07-16 19:42:37,156 - INFO - Set shooting_composite = 95.0
+2025-07-16 19:42:37,156 - INFO - Set passing_composite = 80.0
+2025-07-16 19:42:37,156 - INFO - Set defending_composite = 101.0
+2025-07-16 19:42:37,157 - INFO - Set physical_composite = 85.0
+2025-07-16 19:42:37,157 - INFO - Features provided: 20/22
+2025-07-16 19:42:37,158 - INFO - Feature vector stats: min=0.0, max=185.0, mean=66.0
+2025-07-16 19:42:37,293 - INFO - Prediction: Overall=88.2, Potential=90.0
+2025-07-16 19:42:37,294 - INFO - Feature coverage: 90.9%
+2025-07-16 19:42:37,296 - INFO - 127.0.0.1 - - [16/Jul/2025 19:42:37] "POST /predict HTTP/1.1" 200 -
+2025-07-16 19:42:47,816 - INFO - Set age = 25.0
+2025-07-16 19:42:47,817 - INFO - Set height_cm = 185.0
+2025-07-16 19:42:47,817 - INFO - Set weight_kgs = 80.0
+2025-07-16 19:42:47,817 - INFO - Set international_reputation(1-5) = 4.0
+2025-07-16 19:42:47,818 - INFO - Set weak_foot(1-5) = 4.0
+2025-07-16 19:42:47,818 - INFO - Set skill_moves(1-5) = 4.0
+2025-07-16 19:42:47,818 - INFO - Set heading_accuracy = 85.0
+2025-07-16 19:42:47,818 - INFO - Set dribbling = 90.0
+2025-07-16 19:42:47,819 - INFO - Set curve = 80.0
+2025-07-16 19:42:47,819 - INFO - Set ball_control = 92.0
+2025-07-16 19:42:47,819 - INFO - Set reactions = 88.0
+2025-07-16 19:42:47,820 - INFO - Set aggression = 70.0
+2025-07-16 19:42:47,820 - INFO - Set positioning = 95.0
+2025-07-16 19:42:47,820 - INFO - Set composure = 90.0
+2025-07-16 19:42:47,821 - INFO - Set pace_composite = 85.0
+2025-07-16 19:42:47,821 - INFO - Set shooting_composite = 95.0
+2025-07-16 19:42:47,821 - INFO - Set passing_composite = 80.0
+2025-07-16 19:42:47,822 - INFO - Set defending_composite = 101.0
+2025-07-16 19:42:47,822 - INFO - Set physical_composite = 85.0
+2025-07-16 19:42:47,822 - INFO - Mapped position ST to 14
+2025-07-16 19:42:47,823 - INFO - Features provided: 22/22
+2025-07-16 19:42:47,823 - INFO - Feature vector stats: min=0.0, max=185.0, mean=66.0
+2025-07-16 19:42:47,965 - INFO - Prediction: Overall=88.2, Potential=90.0
+2025-07-16 19:42:47,966 - INFO - Feature coverage: 100.0%
+2025-07-16 19:42:47,967 - INFO - 127.0.0.1 - - [16/Jul/2025 19:42:47] "POST /predict HTTP/1.1" 200 -
+2025-07-16 19:44:35,802 - INFO -  * Detected change in 'E:\\Semester 6\\Data Science\\football-rating-predict\\python\\tes.py', reloading
+2025-07-16 19:44:36,118 - INFO -  * Restarting with stat
+2025-07-16 19:44:37,323 - INFO - Initializing Football Rating Prediction API
+2025-07-16 19:44:39,418 - INFO - Models loaded successfully
+2025-07-16 19:44:39,418 - INFO - Features available: 22
+2025-07-16 19:44:39,418 - INFO - Categorical encoders: ['positions', 'preferred_foot', 'body_type']
+2025-07-16 19:44:39,419 - INFO - API initialized successfully
+2025-07-16 19:44:39,419 - INFO - Starting Football Rating Prediction API server...
+2025-07-16 19:44:39,429 - WARNING -  * Debugger is active!
+2025-07-16 19:44:39,439 - INFO -  * Debugger PIN: 102-047-799
+2025-07-16 19:44:39,608 - INFO - Set age = 25.0
+2025-07-16 19:44:39,609 - INFO - Set height_cm = 185.0
+2025-07-16 19:44:39,609 - INFO - Set weight_kgs = 80.0
+2025-07-16 19:44:39,609 - INFO - Set international_reputation(1-5) = 4.0
+2025-07-16 19:44:39,610 - INFO - Set weak_foot(1-5) = 4.0
+2025-07-16 19:44:39,610 - INFO - Set skill_moves(1-5) = 4.0
+2025-07-16 19:44:39,610 - INFO - Set heading_accuracy = 85.0
+2025-07-16 19:44:39,611 - INFO - Set dribbling = 90.0
+2025-07-16 19:44:39,611 - INFO - Set curve = 80.0
+2025-07-16 19:44:39,611 - INFO - Set ball_control = 92.0
+2025-07-16 19:44:39,612 - INFO - Set reactions = 88.0
+2025-07-16 19:44:39,612 - INFO - Set aggression = 70.0
+2025-07-16 19:44:39,612 - INFO - Set positioning = 95.0
+2025-07-16 19:44:39,612 - INFO - Set composure = 90.0
+2025-07-16 19:44:39,613 - INFO - Set pace_composite = 85.0
+2025-07-16 19:44:39,613 - INFO - Set shooting_composite = 95.0
+2025-07-16 19:44:39,613 - INFO - Set passing_composite = 80.0
+2025-07-16 19:44:39,614 - INFO - Set defending_composite = 101.0
+2025-07-16 19:44:39,614 - INFO - Set physical_composite = 85.0
+2025-07-16 19:44:39,614 - INFO - Mapped position ST to 14
+2025-07-16 19:44:39,615 - INFO - Features provided: 22/22
+2025-07-16 19:44:39,616 - INFO - Feature vector stats: min=0.0, max=185.0, mean=66.0
+2025-07-16 19:44:39,739 - INFO - Prediction: Overall=88.2, Potential=90.0
+2025-07-16 19:44:39,739 - INFO - Feature coverage: 100.0%
+2025-07-16 19:44:39,740 - INFO - 127.0.0.1 - - [16/Jul/2025 19:44:39] "POST /predict HTTP/1.1" 200 -
+2025-07-16 19:49:19,821 - INFO -  * Detected change in 'E:\\Semester 6\\Data Science\\football-rating-predict\\python\\app.py', reloading
+2025-07-16 19:49:20,099 - INFO -  * Restarting with stat
+2025-07-16 19:49:21,110 - INFO - Initializing Football Rating Prediction API
+2025-07-16 19:49:23,037 - INFO - Models loaded successfully
+2025-07-16 19:49:23,038 - INFO - Features available: 22
+2025-07-16 19:49:23,038 - INFO - Categorical encoders: ['positions', 'preferred_foot', 'body_type']
+2025-07-16 19:49:23,038 - INFO - API initialized successfully
+2025-07-16 19:49:23,039 - INFO - Starting Football Rating Prediction API server...
+2025-07-16 19:49:23,048 - WARNING -  * Debugger is active!
+2025-07-16 19:49:23,058 - INFO -  * Debugger PIN: 102-047-799
+2025-07-16 19:50:05,409 - INFO -  * Detected change in 'E:\\Semester 6\\Data Science\\football-rating-predict\\python\\app.py', reloading
+2025-07-16 19:50:05,701 - INFO -  * Restarting with stat
+2025-07-16 19:50:06,785 - INFO - Initializing Football Rating Prediction API
+2025-07-16 19:50:09,080 - INFO - Models loaded successfully
+2025-07-16 19:50:09,080 - INFO - Features available: 22
+2025-07-16 19:50:09,080 - INFO - Categorical encoders: ['positions', 'preferred_foot', 'body_type']
+2025-07-16 19:50:09,081 - INFO - API initialized successfully
+2025-07-16 19:50:09,081 - INFO - Starting Football Rating Prediction API server...
+2025-07-16 19:50:09,092 - WARNING -  * Debugger is active!
+2025-07-16 19:50:09,103 - INFO -  * Debugger PIN: 102-047-799
+2025-07-16 19:51:29,283 - INFO -  * Detected change in 'E:\\Semester 6\\Data Science\\football-rating-predict\\python\\app.py', reloading
+2025-07-16 19:51:29,555 - INFO -  * Restarting with stat
+2025-07-16 19:51:30,651 - INFO - Initializing Football Rating Prediction API
+2025-07-16 19:51:32,805 - INFO - Models loaded successfully
+2025-07-16 19:51:32,806 - INFO - Features available: 22
+2025-07-16 19:51:32,806 - INFO - Categorical encoders: ['positions', 'preferred_foot', 'body_type']
+2025-07-16 19:51:32,806 - INFO - API initialized successfully
+2025-07-16 19:51:32,808 - INFO - Starting Football Rating Prediction API server...
+2025-07-16 19:51:32,822 - WARNING -  * Debugger is active!
+2025-07-16 19:51:32,834 - INFO -  * Debugger PIN: 102-047-799
+2025-07-16 19:52:50,937 - INFO -  * Detected change in 'E:\\Semester 6\\Data Science\\football-rating-predict\\python\\app.py', reloading
+2025-07-16 19:52:51,345 - INFO -  * Restarting with stat
+2025-07-16 19:52:52,425 - INFO - Initializing Football Rating Prediction API
+2025-07-16 19:52:54,553 - INFO - Models loaded successfully
+2025-07-16 19:52:54,554 - INFO - Features available: 22
+2025-07-16 19:52:54,554 - INFO - Categorical encoders: ['positions', 'preferred_foot', 'body_type']
+2025-07-16 19:52:54,554 - INFO - API initialized successfully
+2025-07-16 19:52:54,555 - INFO - Starting Football Rating Prediction API server...
+2025-07-16 19:52:54,563 - WARNING -  * Debugger is active!
+2025-07-16 19:52:54,573 - INFO -  * Debugger PIN: 102-047-799
+2025-07-16 19:53:19,332 - INFO -  * Detected change in 'E:\\Semester 6\\Data Science\\football-rating-predict\\python\\app.py', reloading
+2025-07-16 19:53:19,618 - INFO -  * Restarting with stat
+2025-07-16 19:53:20,806 - INFO - Initializing Football Rating Prediction API
+2025-07-16 19:53:22,967 - INFO - Models loaded successfully
+2025-07-16 19:53:22,967 - INFO - Features available: 22
+2025-07-16 19:53:22,968 - INFO - Categorical encoders: ['positions', 'preferred_foot', 'body_type']
+2025-07-16 19:53:22,968 - INFO - API initialized successfully
+2025-07-16 19:53:22,969 - INFO - Starting Football Rating Prediction API server...
+2025-07-16 19:53:22,989 - WARNING -  * Debugger is active!
+2025-07-16 19:53:23,004 - INFO -  * Debugger PIN: 102-047-799
+2025-07-16 19:53:53,726 - INFO -  * Detected change in 'E:\\Semester 6\\Data Science\\football-rating-predict\\python\\app.py', reloading
+2025-07-16 19:53:54,049 - INFO -  * Restarting with stat
+2025-07-16 19:53:55,168 - INFO - Initializing Football Rating Prediction API
+2025-07-16 19:53:57,269 - INFO - Models loaded successfully
+2025-07-16 19:53:57,269 - INFO - Features available: 22
+2025-07-16 19:53:57,269 - INFO - Categorical encoders: ['positions', 'preferred_foot', 'body_type']
+2025-07-16 19:53:57,270 - INFO - API initialized successfully
+2025-07-16 19:53:57,270 - INFO - Starting Football Rating Prediction API server...
+2025-07-16 19:53:57,280 - WARNING -  * Debugger is active!
+2025-07-16 19:53:57,290 - INFO -  * Debugger PIN: 102-047-799

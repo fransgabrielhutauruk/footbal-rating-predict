@@ -1,0 +1,664 @@
+{
+  "overview": {
+    "total_players": 17954,
+    "total_attributes": 51,
+    "numeric_attributes": 42,
+    "missing_data_percentage": 7.724096656597361
+  },
+  "key_statistics": {
+    "age": {
+      "count": 17954,
+      "mean": 25.56544502617801,
+      "std": 4.705707854152862,
+      "min": 17.0,
+      "q1": 22.0,
+      "median": 25.0,
+      "q3": 29.0,
+      "max": 46.0,
+      "range": 29.0,
+      "iqr": 7.0
+    },
+    "overall_rating": {
+      "count": 17954,
+      "mean": 66.24016932159964,
+      "std": 6.9637297873224355,
+      "min": 47.0,
+      "q1": 62.0,
+      "median": 66.0,
+      "q3": 71.0,
+      "max": 94.0,
+      "range": 47.0,
+      "iqr": 9.0
+    },
+    "potential": {
+      "count": 17954,
+      "mean": 71.43093461067171,
+      "std": 6.131339100237638,
+      "min": 48.0,
+      "q1": 67.0,
+      "median": 71.0,
+      "q3": 75.0,
+      "max": 95.0,
+      "range": 47.0,
+      "iqr": 8.0
+    },
+    "value_euro": {
+      "count": 17699,
+      "mean": 2479280.1853212044,
+      "std": 5687013.850993534,
+      "min": 10000.0,
+      "q1": 325000.0,
+      "median": 700000.0,
+      "q3": 2100000.0,
+      "max": 110500000.0,
+      "range": 110490000.0,
+      "iqr": 1775000.0
+    },
+    "wage_euro": {
+      "count": 17708,
+      "mean": 9902.134628416536,
+      "std": 21995.593750197637,
+      "min": 1000.0,
+      "q1": 1000.0,
+      "median": 3000.0,
+      "q3": 9000.0,
+      "max": 565000.0,
+      "range": 564000.0,
+      "iqr": 8000.0
+    },
+    "height_cm": {
+      "count": 17954,
+      "mean": 174.94692102038542,
+      "std": 14.029449374901956,
+      "min": 152.4,
+      "q1": 154.94,
+      "median": 175.26,
+      "q3": 185.42,
+      "max": 205.74,
+      "range": 53.34,
+      "iqr": 30.47999999999999
+    },
+    "weight_kgs": {
+      "count": 17954,
+      "mean": 75.30104712041884,
+      "std": 7.083683651319649,
+      "min": 49.9,
+      "q1": 69.9,
+      "median": 74.8,
+      "q3": 79.8,
+      "max": 110.2,
+      "range": 60.300000000000004,
+      "iqr": 9.899999999999991
+    }
+  },
+  "all_numeric_statistics": {
+    "age": {
+      "count": 17954,
+      "mean": 25.56544502617801,
+      "std": 4.705707854152862,
+      "min": 17.0,
+      "q1": 22.0,
+      "median": 25.0,
+      "q3": 29.0,
+      "max": 46.0
+    },
+    "height_cm": {
+      "count": 17954,
+      "mean": 174.94692102038542,
+      "std": 14.029449374901956,
+      "min": 152.4,
+      "q1": 154.94,
+      "median": 175.26,
+      "q3": 185.42,
+      "max": 205.74
+    },
+    "weight_kgs": {
+      "count": 17954,
+      "mean": 75.30104712041884,
+      "std": 7.083683651319649,
+      "min": 49.9,
+      "q1": 69.9,
+      "median": 74.8,
+      "q3": 79.8,
+      "max": 110.2
+    },
+    "overall_rating": {
+      "count": 17954,
+      "mean": 66.24016932159964,
+      "std": 6.9637297873224355,
+      "min": 47.0,
+      "q1": 62.0,
+      "median": 66.0,
+      "q3": 71.0,
+      "max": 94.0
+    },
+    "potential": {
+      "count": 17954,
+      "mean": 71.43093461067171,
+      "std": 6.131339100237638,
+      "min": 48.0,
+      "q1": 67.0,
+      "median": 71.0,
+      "q3": 75.0,
+      "max": 95.0
+    },
+    "value_euro": {
+      "count": 17699,
+      "mean": 2479280.1853212044,
+      "std": 5687013.850993534,
+      "min": 10000.0,
+      "q1": 325000.0,
+      "median": 700000.0,
+      "q3": 2100000.0,
+      "max": 110500000.0
+    },
+    "wage_euro": {
+      "count": 17708,
+      "mean": 9902.134628416536,
+      "std": 21995.593750197637,
+      "min": 1000.0,
+      "q1": 1000.0,
+      "median": 3000.0,
+      "q3": 9000.0,
+      "max": 565000.0
+    },
+    "international_reputation(1-5)": {
+      "count": 17954,
+      "mean": 1.1116742787122647,
+      "std": 0.39216786840170215,
+      "min": 1.0,
+      "q1": 1.0,
+      "median": 1.0,
+      "q3": 1.0,
+      "max": 5.0
+    },
+    "weak_foot(1-5)": {
+      "count": 17954,
+      "mean": 2.9456945527459064,
+      "std": 0.663691488290801,
+      "min": 1.0,
+      "q1": 3.0,
+      "median": 3.0,
+      "q3": 3.0,
+      "max": 5.0
+    },
+    "skill_moves(1-5)": {
+      "count": 17954,
+      "mean": 2.3610337529241394,
+      "std": 0.7632225947263013,
+      "min": 1.0,
+      "q1": 2.0,
+      "median": 2.0,
+      "q3": 3.0,
+      "max": 5.0
+    },
+    "release_clause_euro": {
+      "count": 16117,
+      "mean": 4622522.181547434,
+      "std": 11290771.423913704,
+      "min": 13000.0,
+      "q1": 525000.0,
+      "median": 1200000.0,
+      "q3": 3500000.0,
+      "max": 226500000.0
+    },
+    "national_rating": {
+      "count": 857,
+      "mean": 76.34189031505251,
+      "std": 4.786666905832743,
+      "min": 63.0,
+      "q1": 73.0,
+      "median": 75.0,
+      "q3": 81.0,
+      "max": 85.0
+    },
+    "national_jersey_number": {
+      "count": 857,
+      "mean": 12.456242707117854,
+      "std": 8.098157248382444,
+      "min": 1.0,
+      "q1": 6.0,
+      "median": 12.0,
+      "q3": 18.0,
+      "max": 99.0
+    },
+    "crossing": {
+      "count": 17954,
+      "mean": 49.6976718280049,
+      "std": 18.483310343329645,
+      "min": 5.0,
+      "q1": 38.0,
+      "median": 54.0,
+      "q3": 64.0,
+      "max": 93.0
+    },
+    "finishing": {
+      "count": 17954,
+      "mean": 45.35824885819316,
+      "std": 19.64079158844401,
+      "min": 2.0,
+      "q1": 30.0,
+      "median": 49.0,
+      "q3": 62.0,
+      "max": 95.0
+    },
+    "heading_accuracy": {
+      "count": 17954,
+      "mean": 52.148212097582714,
+      "std": 17.521818575611466,
+      "min": 4.0,
+      "q1": 44.0,
+      "median": 56.0,
+      "q3": 64.0,
+      "max": 94.0
+    },
+    "short_passing": {
+      "count": 17954,
+      "mean": 58.56605770301883,
+      "std": 14.86317805944063,
+      "min": 7.0,
+      "q1": 53.0,
+      "median": 62.0,
+      "q3": 68.0,
+      "max": 93.0
+    },
+    "volleys": {
+      "count": 17954,
+      "mean": 42.755207753146934,
+      "std": 17.802935979715816,
+      "min": 3.0,
+      "q1": 30.0,
+      "median": 44.0,
+      "q3": 57.0,
+      "max": 90.0
+    },
+    "dribbling": {
+      "count": 17954,
+      "mean": 55.27899075414949,
+      "std": 19.0918758497418,
+      "min": 4.0,
+      "q1": 49.0,
+      "median": 61.0,
+      "q3": 68.0,
+      "max": 97.0
+    },
+    "curve": {
+      "count": 17954,
+      "mean": 47.101147376629164,
+      "std": 18.536621131550874,
+      "min": 6.0,
+      "q1": 34.0,
+      "median": 49.0,
+      "q3": 62.0,
+      "max": 94.0
+    },
+    "freekick_accuracy": {
+      "count": 17954,
+      "mean": 42.688091790130336,
+      "std": 17.565634433838742,
+      "min": 3.0,
+      "q1": 30.0,
+      "median": 41.0,
+      "q3": 56.0,
+      "max": 94.0
+    },
+    "long_passing": {
+      "count": 17954,
+      "mean": 52.667427871226465,
+      "std": 15.421545070091405,
+      "min": 9.0,
+      "q1": 43.0,
+      "median": 56.0,
+      "q3": 64.0,
+      "max": 93.0
+    },
+    "ball_control": {
+      "count": 17954,
+      "mean": 58.22390553637072,
+      "std": 16.87571730486641,
+      "min": 5.0,
+      "q1": 54.0,
+      "median": 63.0,
+      "q3": 69.0,
+      "max": 96.0
+    },
+    "acceleration": {
+      "count": 17954,
+      "mean": 64.69622368274479,
+      "std": 15.001344569169623,
+      "min": 12.0,
+      "q1": 57.0,
+      "median": 67.0,
+      "q3": 75.0,
+      "max": 97.0
+    },
+    "sprint_speed": {
+      "count": 17954,
+      "mean": 64.80349782778211,
+      "std": 14.722749649071424,
+      "min": 12.0,
+      "q1": 58.0,
+      "median": 67.0,
+      "q3": 75.0,
+      "max": 96.0
+    },
+    "agility": {
+      "count": 17954,
+      "mean": 63.377464631836915,
+      "std": 14.806945568309784,
+      "min": 11.0,
+      "q1": 55.0,
+      "median": 66.0,
+      "q3": 74.0,
+      "max": 96.0
+    },
+    "reactions": {
+      "count": 17954,
+      "mean": 61.82187813300657,
+      "std": 9.07567461878577,
+      "min": 24.0,
+      "q1": 56.0,
+      "median": 62.0,
+      "q3": 68.0,
+      "max": 96.0
+    },
+    "balance": {
+      "count": 17954,
+      "mean": 63.870056811852514,
+      "std": 14.174037886204385,
+      "min": 16.0,
+      "q1": 56.0,
+      "median": 66.0,
+      "q3": 74.0,
+      "max": 96.0
+    },
+    "shot_power": {
+      "count": 17954,
+      "mean": 55.319873008800265,
+      "std": 17.351295404032143,
+      "min": 2.0,
+      "q1": 45.0,
+      "median": 59.0,
+      "q3": 68.0,
+      "max": 95.0
+    },
+    "jumping": {
+      "count": 17954,
+      "mean": 64.95521889272585,
+      "std": 11.70571111468118,
+      "min": 15.0,
+      "q1": 58.0,
+      "median": 66.0,
+      "q3": 73.0,
+      "max": 95.0
+    },
+    "stamina": {
+      "count": 17954,
+      "mean": 63.13384204077086,
+      "std": 15.917554423586235,
+      "min": 12.0,
+      "q1": 56.0,
+      "median": 66.0,
+      "q3": 74.0,
+      "max": 97.0
+    },
+    "strength": {
+      "count": 17954,
+      "mean": 65.15885039545505,
+      "std": 12.53595499298076,
+      "min": 20.0,
+      "q1": 58.0,
+      "median": 66.0,
+      "q3": 74.0,
+      "max": 97.0
+    },
+    "long_shots": {
+      "count": 17954,
+      "mean": 46.852456277152726,
+      "std": 19.429337234236183,
+      "min": 3.0,
+      "q1": 32.0,
+      "median": 51.0,
+      "q3": 62.0,
+      "max": 94.0
+    },
+    "aggression": {
+      "count": 17954,
+      "mean": 55.81653113512309,
+      "std": 17.394046935649943,
+      "min": 11.0,
+      "q1": 44.0,
+      "median": 59.0,
+      "q3": 69.0,
+      "max": 95.0
+    },
+    "interceptions": {
+      "count": 17954,
+      "mean": 46.65795922914114,
+      "std": 20.754648787952686,
+      "min": 3.0,
+      "q1": 26.0,
+      "median": 52.0,
+      "q3": 64.0,
+      "max": 92.0
+    },
+    "positioning": {
+      "count": 17954,
+      "mean": 49.85730199398463,
+      "std": 19.694311227074778,
+      "min": 2.0,
+      "q1": 38.0,
+      "median": 55.0,
+      "q3": 64.0,
+      "max": 95.0
+    },
+    "vision": {
+      "count": 17954,
+      "mean": 53.406260443355244,
+      "std": 14.156037632588207,
+      "min": 10.0,
+      "q1": 44.0,
+      "median": 55.0,
+      "q3": 64.0,
+      "max": 94.0
+    },
+    "penalties": {
+      "count": 17954,
+      "mean": 48.35730199398463,
+      "std": 15.810843850066593,
+      "min": 5.0,
+      "q1": 38.0,
+      "median": 49.0,
+      "q3": 60.0,
+      "max": 92.0
+    },
+    "composure": {
+      "count": 17954,
+      "mean": 58.68018268909435,
+      "std": 11.625541349280567,
+      "min": 12.0,
+      "q1": 51.0,
+      "median": 60.0,
+      "q3": 67.0,
+      "max": 96.0
+    },
+    "marking": {
+      "count": 17954,
+      "mean": 47.16286064386766,
+      "std": 20.037345786621437,
+      "min": 3.0,
+      "q1": 30.0,
+      "median": 52.5,
+      "q3": 64.0,
+      "max": 94.0
+    },
+    "standing_tackle": {
+      "count": 17954,
+      "mean": 47.73303999108834,
+      "std": 21.674973113237055,
+      "min": 2.0,
+      "q1": 27.0,
+      "median": 55.0,
+      "q3": 66.0,
+      "max": 93.0
+    },
+    "sliding_tackle": {
+      "count": 17954,
+      "mean": 45.7059151164086,
+      "std": 21.285811998788304,
+      "min": 3.0,
+      "q1": 24.0,
+      "median": 52.0,
+      "q3": 64.0,
+      "max": 90.0
+    }
+  },
+  "missing_values": {
+    "value_euro": {
+      "count": 255,
+      "percentage": 1.4202963127993762
+    },
+    "wage_euro": {
+      "count": 246,
+      "percentage": 1.3701682076417512
+    },
+    "release_clause_euro": {
+      "count": 1837,
+      "percentage": 10.231703241617467
+    },
+    "national_team": {
+      "count": 17097,
+      "percentage": 95.2266904311017
+    },
+    "national_rating": {
+      "count": 17097,
+      "percentage": 95.2266904311017
+    },
+    "national_team_position": {
+      "count": 17097,
+      "percentage": 95.2266904311017
+    },
+    "national_jersey_number": {
+      "count": 17097,
+      "percentage": 95.2266904311017
+    }
+  },
+  "data_types": {
+    "name": "object",
+    "full_name": "object",
+    "birth_date": "object",
+    "age": "int64",
+    "height_cm": "float64",
+    "weight_kgs": "float64",
+    "positions": "object",
+    "nationality": "object",
+    "overall_rating": "int64",
+    "potential": "int64",
+    "value_euro": "float64",
+    "wage_euro": "float64",
+    "preferred_foot": "object",
+    "international_reputation(1-5)": "int64",
+    "weak_foot(1-5)": "int64",
+    "skill_moves(1-5)": "int64",
+    "body_type": "object",
+    "release_clause_euro": "float64",
+    "national_team": "object",
+    "national_rating": "float64",
+    "national_team_position": "object",
+    "national_jersey_number": "float64",
+    "crossing": "int64",
+    "finishing": "int64",
+    "heading_accuracy": "int64",
+    "short_passing": "int64",
+    "volleys": "int64",
+    "dribbling": "int64",
+    "curve": "int64",
+    "freekick_accuracy": "int64",
+    "long_passing": "int64",
+    "ball_control": "int64",
+    "acceleration": "int64",
+    "sprint_speed": "int64",
+    "agility": "int64",
+    "reactions": "int64",
+    "balance": "int64",
+    "shot_power": "int64",
+    "jumping": "int64",
+    "stamina": "int64",
+    "strength": "int64",
+    "long_shots": "int64",
+    "aggression": "int64",
+    "interceptions": "int64",
+    "positioning": "int64",
+    "vision": "int64",
+    "penalties": "int64",
+    "composure": "int64",
+    "marking": "int64",
+    "standing_tackle": "int64",
+    "sliding_tackle": "int64"
+  },
+  "categorical_summary": {
+    "preferred_foot": {
+      "unique_values": 2,
+      "most_common": "Right",
+      "most_common_count": 13781,
+      "distribution": {
+        "Right": 13781,
+        "Left": 4173
+      }
+    },
+    "body_type": {
+      "unique_values": 10,
+      "most_common": "Normal",
+      "most_common_count": 10393,
+      "distribution": {
+        "Normal": 10393,
+        "Lean": 6468,
+        "Stocky": 1086,
+        "Messi": 1,
+        "Courtois": 1,
+        "PLAYER_BODY_TYPE_25": 1,
+        "Akinfenwa": 1,
+        "Shaqiri": 1,
+        "Neymar": 1,
+        "C. Ronaldo": 1
+      }
+    },
+    "nationalities": {
+      "unique_countries": 160,
+      "most_common_nationality": "England",
+      "top_10_countries": {
+        "England": 1658,
+        "Germany": 1199,
+        "Spain": 1070,
+        "France": 925,
+        "Argentina": 904,
+        "Brazil": 832,
+        "Italy": 655,
+        "Colombia": 624,
+        "Japan": 466,
+        "Netherlands": 441
+      }
+    },
+    "positions": {
+      "unique_positions": 15,
+      "most_common_position": "CM",
+      "distribution": {
+        "CM": 3795,
+        "CB": 3675,
+        "ST": 3173,
+        "CDM": 2699,
+        "LM": 2521,
+        "RM": 2452,
+        "CAM": 2185,
+        "GK": 2065,
+        "RB": 2057,
+        "LB": 2039,
+        "LW": 957,
+        "RW": 941,
+        "CF": 362,
+        "RWB": 314,
+        "LWB": 299
+      }
+    }
+  }
+}

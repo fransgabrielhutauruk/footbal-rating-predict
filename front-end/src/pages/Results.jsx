@@ -649,28 +649,27 @@ const Results = () => {
           </div>
         </div>
 
-        {/* Video Story Placeholder */}
+        {/* Video Story */}
         <div className="bg-white rounded-xl p-8 shadow-lg border border-gray-100">
           <div className="flex items-center justify-between mb-6">
             <h3 className="text-xl font-bold text-gray-900 flex items-center">
               <Camera className="w-6 h-6 mr-3 text-red-600" />
               Story Video
             </h3>
-            <div className="text-sm text-gray-500">Coming Soon</div>
+            <div className="text-sm text-gray-500">Watch the video</div>
           </div>
           
           <div className="aspect-video bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl flex items-center justify-center">
-            <div className="text-center text-white">
-              <Play className="w-16 h-16 mx-auto mb-4 opacity-70" />
-              <h4 className="text-xl font-semibold mb-2">Interactive Video Story</h4>
-              <p className="text-gray-300 max-w-md">
-                Video interaktif yang menggabungkan visualisasi data, narasi, dan insight 
-                untuk memberikan pengalaman storytelling yang immersive.
-              </p>
-              <button className="mt-4 px-6 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors">
-                Coming Soon
-              </button>
-            </div>
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/aJapeexPY84"
+              title="Story Video"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="w-full h-full rounded-xl"
+            ></iframe>
           </div>
         </div>
 
